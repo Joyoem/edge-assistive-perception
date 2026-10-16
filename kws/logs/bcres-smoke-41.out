@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/zhaoyan/kws_benchmark/scripts/train_bcresnet_gsc12.py", line 46, in <module>
+    from utils import Preprocess
+  File "/home/zhaoyan/kws_benchmark/repos/bcresnet/utils.py", line 8, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'

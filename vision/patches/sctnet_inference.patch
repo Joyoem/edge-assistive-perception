@@ -1,0 +1,460 @@
+diff --git a/mmseg/__pycache__/__init__.cpython-38.pyc b/mmseg/__pycache__/__init__.cpython-38.pyc
+index b4f5e2e..fb1afab 100644
+Binary files a/mmseg/__pycache__/__init__.cpython-38.pyc and b/mmseg/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/__pycache__/version.cpython-38.pyc b/mmseg/__pycache__/version.cpython-38.pyc
+index b97b6a6..f969bdb 100644
+Binary files a/mmseg/__pycache__/version.cpython-38.pyc and b/mmseg/__pycache__/version.cpython-38.pyc differ
+diff --git a/mmseg/apis/__pycache__/__init__.cpython-38.pyc b/mmseg/apis/__pycache__/__init__.cpython-38.pyc
+index f67991a..da24612 100644
+Binary files a/mmseg/apis/__pycache__/__init__.cpython-38.pyc and b/mmseg/apis/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/apis/__pycache__/inference.cpython-38.pyc b/mmseg/apis/__pycache__/inference.cpython-38.pyc
+index e6b93e1..60a7d9c 100644
+Binary files a/mmseg/apis/__pycache__/inference.cpython-38.pyc and b/mmseg/apis/__pycache__/inference.cpython-38.pyc differ
+diff --git a/mmseg/apis/__pycache__/test.cpython-38.pyc b/mmseg/apis/__pycache__/test.cpython-38.pyc
+index 5ea41fb..1f07371 100644
+Binary files a/mmseg/apis/__pycache__/test.cpython-38.pyc and b/mmseg/apis/__pycache__/test.cpython-38.pyc differ
+diff --git a/mmseg/apis/__pycache__/train.cpython-38.pyc b/mmseg/apis/__pycache__/train.cpython-38.pyc
+index 6294076..9d54209 100644
+Binary files a/mmseg/apis/__pycache__/train.cpython-38.pyc and b/mmseg/apis/__pycache__/train.cpython-38.pyc differ
+diff --git a/mmseg/core/__pycache__/__init__.cpython-38.pyc b/mmseg/core/__pycache__/__init__.cpython-38.pyc
+index aee3e44..2bdf92e 100644
+Binary files a/mmseg/core/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/__pycache__/builder.cpython-38.pyc b/mmseg/core/__pycache__/builder.cpython-38.pyc
+index 764715a..6a9c597 100644
+Binary files a/mmseg/core/__pycache__/builder.cpython-38.pyc and b/mmseg/core/__pycache__/builder.cpython-38.pyc differ
+diff --git a/mmseg/core/evaluation/__pycache__/__init__.cpython-38.pyc b/mmseg/core/evaluation/__pycache__/__init__.cpython-38.pyc
+index 2998f75..e0b2d90 100644
+Binary files a/mmseg/core/evaluation/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/evaluation/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/evaluation/__pycache__/class_names.cpython-38.pyc b/mmseg/core/evaluation/__pycache__/class_names.cpython-38.pyc
+index df104ef..7ca55a0 100644
+Binary files a/mmseg/core/evaluation/__pycache__/class_names.cpython-38.pyc and b/mmseg/core/evaluation/__pycache__/class_names.cpython-38.pyc differ
+diff --git a/mmseg/core/evaluation/__pycache__/eval_hooks.cpython-38.pyc b/mmseg/core/evaluation/__pycache__/eval_hooks.cpython-38.pyc
+index 3858ced..8860a1a 100644
+Binary files a/mmseg/core/evaluation/__pycache__/eval_hooks.cpython-38.pyc and b/mmseg/core/evaluation/__pycache__/eval_hooks.cpython-38.pyc differ
+diff --git a/mmseg/core/evaluation/__pycache__/metrics.cpython-38.pyc b/mmseg/core/evaluation/__pycache__/metrics.cpython-38.pyc
+index e7dfda6..3804600 100644
+Binary files a/mmseg/core/evaluation/__pycache__/metrics.cpython-38.pyc and b/mmseg/core/evaluation/__pycache__/metrics.cpython-38.pyc differ
+diff --git a/mmseg/core/hook/__pycache__/__init__.cpython-38.pyc b/mmseg/core/hook/__pycache__/__init__.cpython-38.pyc
+index e179238..363bcca 100644
+Binary files a/mmseg/core/hook/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/hook/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/hook/__pycache__/wandblogger_hook.cpython-38.pyc b/mmseg/core/hook/__pycache__/wandblogger_hook.cpython-38.pyc
+index e4f40aa..6fd3c7e 100644
+Binary files a/mmseg/core/hook/__pycache__/wandblogger_hook.cpython-38.pyc and b/mmseg/core/hook/__pycache__/wandblogger_hook.cpython-38.pyc differ
+diff --git a/mmseg/core/optimizers/__pycache__/__init__.cpython-38.pyc b/mmseg/core/optimizers/__pycache__/__init__.cpython-38.pyc
+index 5a46dc2..43e313c 100644
+Binary files a/mmseg/core/optimizers/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/optimizers/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/optimizers/__pycache__/layer_decay_optimizer_constructor.cpython-38.pyc b/mmseg/core/optimizers/__pycache__/layer_decay_optimizer_constructor.cpython-38.pyc
+index c5ce2f2..796b93b 100644
+Binary files a/mmseg/core/optimizers/__pycache__/layer_decay_optimizer_constructor.cpython-38.pyc and b/mmseg/core/optimizers/__pycache__/layer_decay_optimizer_constructor.cpython-38.pyc differ
+diff --git a/mmseg/core/seg/__pycache__/__init__.cpython-38.pyc b/mmseg/core/seg/__pycache__/__init__.cpython-38.pyc
+index e8ec835..e669b7d 100644
+Binary files a/mmseg/core/seg/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/seg/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/seg/__pycache__/builder.cpython-38.pyc b/mmseg/core/seg/__pycache__/builder.cpython-38.pyc
+index a4a4ceb..96cedce 100644
+Binary files a/mmseg/core/seg/__pycache__/builder.cpython-38.pyc and b/mmseg/core/seg/__pycache__/builder.cpython-38.pyc differ
+diff --git a/mmseg/core/seg/sampler/__pycache__/__init__.cpython-38.pyc b/mmseg/core/seg/sampler/__pycache__/__init__.cpython-38.pyc
+index 661d347..1ca2c6c 100644
+Binary files a/mmseg/core/seg/sampler/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/seg/sampler/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/seg/sampler/__pycache__/base_pixel_sampler.cpython-38.pyc b/mmseg/core/seg/sampler/__pycache__/base_pixel_sampler.cpython-38.pyc
+index f2cfc88..3742df0 100644
+Binary files a/mmseg/core/seg/sampler/__pycache__/base_pixel_sampler.cpython-38.pyc and b/mmseg/core/seg/sampler/__pycache__/base_pixel_sampler.cpython-38.pyc differ
+diff --git a/mmseg/core/seg/sampler/__pycache__/ohem_pixel_sampler.cpython-38.pyc b/mmseg/core/seg/sampler/__pycache__/ohem_pixel_sampler.cpython-38.pyc
+index 422f52a..7212853 100644
+Binary files a/mmseg/core/seg/sampler/__pycache__/ohem_pixel_sampler.cpython-38.pyc and b/mmseg/core/seg/sampler/__pycache__/ohem_pixel_sampler.cpython-38.pyc differ
+diff --git a/mmseg/core/utils/__pycache__/__init__.cpython-38.pyc b/mmseg/core/utils/__pycache__/__init__.cpython-38.pyc
+index b0ec10e..b9a634c 100644
+Binary files a/mmseg/core/utils/__pycache__/__init__.cpython-38.pyc and b/mmseg/core/utils/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/core/utils/__pycache__/dist_util.cpython-38.pyc b/mmseg/core/utils/__pycache__/dist_util.cpython-38.pyc
+index 1f0188c..0ef4f38 100644
+Binary files a/mmseg/core/utils/__pycache__/dist_util.cpython-38.pyc and b/mmseg/core/utils/__pycache__/dist_util.cpython-38.pyc differ
+diff --git a/mmseg/core/utils/__pycache__/misc.cpython-38.pyc b/mmseg/core/utils/__pycache__/misc.cpython-38.pyc
+index fb5f058..fc0c599 100644
+Binary files a/mmseg/core/utils/__pycache__/misc.cpython-38.pyc and b/mmseg/core/utils/__pycache__/misc.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/__init__.cpython-38.pyc b/mmseg/datasets/__pycache__/__init__.cpython-38.pyc
+index fe01098..e6d20af 100644
+Binary files a/mmseg/datasets/__pycache__/__init__.cpython-38.pyc and b/mmseg/datasets/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/ade.cpython-38.pyc b/mmseg/datasets/__pycache__/ade.cpython-38.pyc
+index e232b6d..55d5804 100644
+Binary files a/mmseg/datasets/__pycache__/ade.cpython-38.pyc and b/mmseg/datasets/__pycache__/ade.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/builder.cpython-38.pyc b/mmseg/datasets/__pycache__/builder.cpython-38.pyc
+index 96a0ce4..3a8a665 100644
+Binary files a/mmseg/datasets/__pycache__/builder.cpython-38.pyc and b/mmseg/datasets/__pycache__/builder.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/chase_db1.cpython-38.pyc b/mmseg/datasets/__pycache__/chase_db1.cpython-38.pyc
+index 5baa462..4a45e9d 100644
+Binary files a/mmseg/datasets/__pycache__/chase_db1.cpython-38.pyc and b/mmseg/datasets/__pycache__/chase_db1.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/cityscapes.cpython-38.pyc b/mmseg/datasets/__pycache__/cityscapes.cpython-38.pyc
+index 85597d0..0891cc1 100644
+Binary files a/mmseg/datasets/__pycache__/cityscapes.cpython-38.pyc and b/mmseg/datasets/__pycache__/cityscapes.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/coco_stuff.cpython-38.pyc b/mmseg/datasets/__pycache__/coco_stuff.cpython-38.pyc
+index 369be9e..eb7a1e6 100644
+Binary files a/mmseg/datasets/__pycache__/coco_stuff.cpython-38.pyc and b/mmseg/datasets/__pycache__/coco_stuff.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/custom.cpython-38.pyc b/mmseg/datasets/__pycache__/custom.cpython-38.pyc
+index c726aae..3621666 100644
+Binary files a/mmseg/datasets/__pycache__/custom.cpython-38.pyc and b/mmseg/datasets/__pycache__/custom.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/dark_zurich.cpython-38.pyc b/mmseg/datasets/__pycache__/dark_zurich.cpython-38.pyc
+index 0f8b759..99b8ce5 100644
+Binary files a/mmseg/datasets/__pycache__/dark_zurich.cpython-38.pyc and b/mmseg/datasets/__pycache__/dark_zurich.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/dataset_wrappers.cpython-38.pyc b/mmseg/datasets/__pycache__/dataset_wrappers.cpython-38.pyc
+index ceb0b44..84bf41d 100644
+Binary files a/mmseg/datasets/__pycache__/dataset_wrappers.cpython-38.pyc and b/mmseg/datasets/__pycache__/dataset_wrappers.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/drive.cpython-38.pyc b/mmseg/datasets/__pycache__/drive.cpython-38.pyc
+index d7db35d..a465b2f 100644
+Binary files a/mmseg/datasets/__pycache__/drive.cpython-38.pyc and b/mmseg/datasets/__pycache__/drive.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/hrf.cpython-38.pyc b/mmseg/datasets/__pycache__/hrf.cpython-38.pyc
+index 9cf7fb4..13bc03f 100644
+Binary files a/mmseg/datasets/__pycache__/hrf.cpython-38.pyc and b/mmseg/datasets/__pycache__/hrf.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/isaid.cpython-38.pyc b/mmseg/datasets/__pycache__/isaid.cpython-38.pyc
+index a7bc9b8..0213c11 100644
+Binary files a/mmseg/datasets/__pycache__/isaid.cpython-38.pyc and b/mmseg/datasets/__pycache__/isaid.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/isprs.cpython-38.pyc b/mmseg/datasets/__pycache__/isprs.cpython-38.pyc
+index 97b5a68..7149364 100644
+Binary files a/mmseg/datasets/__pycache__/isprs.cpython-38.pyc and b/mmseg/datasets/__pycache__/isprs.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/loveda.cpython-38.pyc b/mmseg/datasets/__pycache__/loveda.cpython-38.pyc
+index 659cfd6..2ac81be 100644
+Binary files a/mmseg/datasets/__pycache__/loveda.cpython-38.pyc and b/mmseg/datasets/__pycache__/loveda.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/night_driving.cpython-38.pyc b/mmseg/datasets/__pycache__/night_driving.cpython-38.pyc
+index 1d86f77..63cc243 100644
+Binary files a/mmseg/datasets/__pycache__/night_driving.cpython-38.pyc and b/mmseg/datasets/__pycache__/night_driving.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/pascal_context.cpython-38.pyc b/mmseg/datasets/__pycache__/pascal_context.cpython-38.pyc
+index a406592..def867d 100644
+Binary files a/mmseg/datasets/__pycache__/pascal_context.cpython-38.pyc and b/mmseg/datasets/__pycache__/pascal_context.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/potsdam.cpython-38.pyc b/mmseg/datasets/__pycache__/potsdam.cpython-38.pyc
+index 79d46e1..2f7e51e 100644
+Binary files a/mmseg/datasets/__pycache__/potsdam.cpython-38.pyc and b/mmseg/datasets/__pycache__/potsdam.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/stare.cpython-38.pyc b/mmseg/datasets/__pycache__/stare.cpython-38.pyc
+index c22ad47..51c93ea 100644
+Binary files a/mmseg/datasets/__pycache__/stare.cpython-38.pyc and b/mmseg/datasets/__pycache__/stare.cpython-38.pyc differ
+diff --git a/mmseg/datasets/__pycache__/voc.cpython-38.pyc b/mmseg/datasets/__pycache__/voc.cpython-38.pyc
+index 4183423..9f90843 100644
+Binary files a/mmseg/datasets/__pycache__/voc.cpython-38.pyc and b/mmseg/datasets/__pycache__/voc.cpython-38.pyc differ
+diff --git a/mmseg/datasets/pipelines/__pycache__/__init__.cpython-38.pyc b/mmseg/datasets/pipelines/__pycache__/__init__.cpython-38.pyc
+index 1270112..ac05e5b 100644
+Binary files a/mmseg/datasets/pipelines/__pycache__/__init__.cpython-38.pyc and b/mmseg/datasets/pipelines/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/datasets/pipelines/__pycache__/compose.cpython-38.pyc b/mmseg/datasets/pipelines/__pycache__/compose.cpython-38.pyc
+index d7cab8a..5df7ad1 100644
+Binary files a/mmseg/datasets/pipelines/__pycache__/compose.cpython-38.pyc and b/mmseg/datasets/pipelines/__pycache__/compose.cpython-38.pyc differ
+diff --git a/mmseg/datasets/pipelines/__pycache__/formatting.cpython-38.pyc b/mmseg/datasets/pipelines/__pycache__/formatting.cpython-38.pyc
+index 1ab583f..7305e85 100644
+Binary files a/mmseg/datasets/pipelines/__pycache__/formatting.cpython-38.pyc and b/mmseg/datasets/pipelines/__pycache__/formatting.cpython-38.pyc differ
+diff --git a/mmseg/datasets/pipelines/__pycache__/loading.cpython-38.pyc b/mmseg/datasets/pipelines/__pycache__/loading.cpython-38.pyc
+index bf6380c..aab7608 100644
+Binary files a/mmseg/datasets/pipelines/__pycache__/loading.cpython-38.pyc and b/mmseg/datasets/pipelines/__pycache__/loading.cpython-38.pyc differ
+diff --git a/mmseg/datasets/pipelines/__pycache__/test_time_aug.cpython-38.pyc b/mmseg/datasets/pipelines/__pycache__/test_time_aug.cpython-38.pyc
+index 33ad77f..143c1c3 100644
+Binary files a/mmseg/datasets/pipelines/__pycache__/test_time_aug.cpython-38.pyc and b/mmseg/datasets/pipelines/__pycache__/test_time_aug.cpython-38.pyc differ
+diff --git a/mmseg/datasets/pipelines/__pycache__/transforms.cpython-38.pyc b/mmseg/datasets/pipelines/__pycache__/transforms.cpython-38.pyc
+index 285040d..a115a73 100644
+Binary files a/mmseg/datasets/pipelines/__pycache__/transforms.cpython-38.pyc and b/mmseg/datasets/pipelines/__pycache__/transforms.cpython-38.pyc differ
+diff --git a/mmseg/datasets/samplers/__pycache__/__init__.cpython-38.pyc b/mmseg/datasets/samplers/__pycache__/__init__.cpython-38.pyc
+index 7da14d8..4fa1a3c 100644
+Binary files a/mmseg/datasets/samplers/__pycache__/__init__.cpython-38.pyc and b/mmseg/datasets/samplers/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/datasets/samplers/__pycache__/distributed_sampler.cpython-38.pyc b/mmseg/datasets/samplers/__pycache__/distributed_sampler.cpython-38.pyc
+index 0909055..5ed54b0 100644
+Binary files a/mmseg/datasets/samplers/__pycache__/distributed_sampler.cpython-38.pyc and b/mmseg/datasets/samplers/__pycache__/distributed_sampler.cpython-38.pyc differ
+diff --git a/mmseg/models/__pycache__/__init__.cpython-38.pyc b/mmseg/models/__pycache__/__init__.cpython-38.pyc
+index a874d24..4f0f52d 100644
+Binary files a/mmseg/models/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/__pycache__/builder.cpython-38.pyc b/mmseg/models/__pycache__/builder.cpython-38.pyc
+index a1291b5..eb493ea 100644
+Binary files a/mmseg/models/__pycache__/builder.cpython-38.pyc and b/mmseg/models/__pycache__/builder.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/__init__.cpython-38.pyc b/mmseg/models/backbones/__pycache__/__init__.cpython-38.pyc
+index 131148f..8712123 100644
+Binary files a/mmseg/models/backbones/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/beit.cpython-38.pyc b/mmseg/models/backbones/__pycache__/beit.cpython-38.pyc
+index 8b119a0..7f5bc78 100644
+Binary files a/mmseg/models/backbones/__pycache__/beit.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/beit.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/bisenetv1.cpython-38.pyc b/mmseg/models/backbones/__pycache__/bisenetv1.cpython-38.pyc
+index 83903df..52361d4 100644
+Binary files a/mmseg/models/backbones/__pycache__/bisenetv1.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/bisenetv1.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/bisenetv2.cpython-38.pyc b/mmseg/models/backbones/__pycache__/bisenetv2.cpython-38.pyc
+index ea21e82..df7ca09 100644
+Binary files a/mmseg/models/backbones/__pycache__/bisenetv2.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/bisenetv2.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/cgnet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/cgnet.cpython-38.pyc
+index 0bb95cc..7b0c9db 100644
+Binary files a/mmseg/models/backbones/__pycache__/cgnet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/cgnet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/erfnet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/erfnet.cpython-38.pyc
+index fe6e45a..4bed061 100644
+Binary files a/mmseg/models/backbones/__pycache__/erfnet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/erfnet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/fast_scnn.cpython-38.pyc b/mmseg/models/backbones/__pycache__/fast_scnn.cpython-38.pyc
+index 1126e2c..36ac62d 100644
+Binary files a/mmseg/models/backbones/__pycache__/fast_scnn.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/fast_scnn.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/hrnet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/hrnet.cpython-38.pyc
+index f4e5446..5aaaaf0 100644
+Binary files a/mmseg/models/backbones/__pycache__/hrnet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/hrnet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/icnet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/icnet.cpython-38.pyc
+index c34d182..e6858e7 100644
+Binary files a/mmseg/models/backbones/__pycache__/icnet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/icnet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/mae.cpython-38.pyc b/mmseg/models/backbones/__pycache__/mae.cpython-38.pyc
+index 630e41f..7d16a05 100644
+Binary files a/mmseg/models/backbones/__pycache__/mae.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/mae.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/mit.cpython-38.pyc b/mmseg/models/backbones/__pycache__/mit.cpython-38.pyc
+index 827e737..4a768e7 100644
+Binary files a/mmseg/models/backbones/__pycache__/mit.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/mit.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/mobilenet_v2.cpython-38.pyc b/mmseg/models/backbones/__pycache__/mobilenet_v2.cpython-38.pyc
+index 160fd8d..f4d801e 100644
+Binary files a/mmseg/models/backbones/__pycache__/mobilenet_v2.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/mobilenet_v2.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/mobilenet_v3.cpython-38.pyc b/mmseg/models/backbones/__pycache__/mobilenet_v3.cpython-38.pyc
+index d6fea97..2efbc3b 100644
+Binary files a/mmseg/models/backbones/__pycache__/mobilenet_v3.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/mobilenet_v3.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/resnest.cpython-38.pyc b/mmseg/models/backbones/__pycache__/resnest.cpython-38.pyc
+index e0604a6..6f61dc7 100644
+Binary files a/mmseg/models/backbones/__pycache__/resnest.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/resnest.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/resnet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/resnet.cpython-38.pyc
+index 8b9ef16..351be3f 100644
+Binary files a/mmseg/models/backbones/__pycache__/resnet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/resnet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/resnext.cpython-38.pyc b/mmseg/models/backbones/__pycache__/resnext.cpython-38.pyc
+index 457c513..5df48c2 100644
+Binary files a/mmseg/models/backbones/__pycache__/resnext.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/resnext.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/sctnet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/sctnet.cpython-38.pyc
+index 71ce8b1..9dd6c9d 100644
+Binary files a/mmseg/models/backbones/__pycache__/sctnet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/sctnet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/stdc.cpython-38.pyc b/mmseg/models/backbones/__pycache__/stdc.cpython-38.pyc
+index b1f8df7..d80f3ef 100644
+Binary files a/mmseg/models/backbones/__pycache__/stdc.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/stdc.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/swin.cpython-38.pyc b/mmseg/models/backbones/__pycache__/swin.cpython-38.pyc
+index a586890..a23cf8e 100644
+Binary files a/mmseg/models/backbones/__pycache__/swin.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/swin.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/timm_backbone.cpython-38.pyc b/mmseg/models/backbones/__pycache__/timm_backbone.cpython-38.pyc
+index 7e1e029..7b80032 100644
+Binary files a/mmseg/models/backbones/__pycache__/timm_backbone.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/timm_backbone.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/twins.cpython-38.pyc b/mmseg/models/backbones/__pycache__/twins.cpython-38.pyc
+index ff3cbb3..7699cc5 100644
+Binary files a/mmseg/models/backbones/__pycache__/twins.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/twins.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/unet.cpython-38.pyc b/mmseg/models/backbones/__pycache__/unet.cpython-38.pyc
+index acb2171..04bfd06 100644
+Binary files a/mmseg/models/backbones/__pycache__/unet.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/unet.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/__pycache__/vit.cpython-38.pyc b/mmseg/models/backbones/__pycache__/vit.cpython-38.pyc
+index 923b775..69368f6 100644
+Binary files a/mmseg/models/backbones/__pycache__/vit.cpython-38.pyc and b/mmseg/models/backbones/__pycache__/vit.cpython-38.pyc differ
+diff --git a/mmseg/models/backbones/sctnet.py b/mmseg/models/backbones/sctnet.py
+index f1cc65e..be139ec 100644
+--- a/mmseg/models/backbones/sctnet.py
++++ b/mmseg/models/backbones/sctnet.py
+@@ -84,7 +84,7 @@ class SCTNet(BaseModule):
+         self.spp = DAPPM_head(
+             base_chs * 8, spp_channels, base_chs * 2)
+ 
+-        if self.init_cfg.type == 'Pretrained':
++        if self.init_cfg is not None and self.init_cfg.get('type') == 'Pretrained':
+             super(SCTNet, self).init_weights()
+         else:
+             self.init_weight()
+diff --git a/mmseg/models/decode_heads/__pycache__/__init__.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/__init__.cpython-38.pyc
+index 1ce4511..e64ca43 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/ann_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/ann_head.cpython-38.pyc
+index 751c4dd..25dc7fc 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/ann_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/ann_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/apc_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/apc_head.cpython-38.pyc
+index 4961bfa..edd6dfb 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/apc_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/apc_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/aspp_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/aspp_head.cpython-38.pyc
+index 5d72b3c..7ec1f7b 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/aspp_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/aspp_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/cascade_decode_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/cascade_decode_head.cpython-38.pyc
+index a3aff2b..1460c64 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/cascade_decode_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/cascade_decode_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/cc_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/cc_head.cpython-38.pyc
+index a50d529..171200b 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/cc_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/cc_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/da_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/da_head.cpython-38.pyc
+index 2d8862a..f4c292c 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/da_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/da_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/decode_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/decode_head.cpython-38.pyc
+index aaa74ee..5ffa4df 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/decode_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/decode_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/dm_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/dm_head.cpython-38.pyc
+index ec2e96b..9029247 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/dm_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/dm_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/dnl_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/dnl_head.cpython-38.pyc
+index 8a59a95..5247552 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/dnl_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/dnl_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/dpt_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/dpt_head.cpython-38.pyc
+index b96a5a3..ec37894 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/dpt_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/dpt_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/ema_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/ema_head.cpython-38.pyc
+index 8c978d7..2d606a2 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/ema_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/ema_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/enc_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/enc_head.cpython-38.pyc
+index f70d546..4e9b9d3 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/enc_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/enc_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/fcn_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/fcn_head.cpython-38.pyc
+index c0837f4..ed02f4e 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/fcn_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/fcn_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/fpn_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/fpn_head.cpython-38.pyc
+index fd5e1ff..57d3bab 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/fpn_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/fpn_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/gc_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/gc_head.cpython-38.pyc
+index 3887f6f..9acaac7 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/gc_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/gc_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/isa_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/isa_head.cpython-38.pyc
+index 2f28371..4c3accd 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/isa_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/isa_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/knet_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/knet_head.cpython-38.pyc
+index e780cc1..b17fae7 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/knet_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/knet_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/lraspp_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/lraspp_head.cpython-38.pyc
+index e1eb5dc..a2b3d16 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/lraspp_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/lraspp_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/nl_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/nl_head.cpython-38.pyc
+index 3cb81f5..a5db065 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/nl_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/nl_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/ocr_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/ocr_head.cpython-38.pyc
+index 69661b9..bebbf61 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/ocr_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/ocr_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/point_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/point_head.cpython-38.pyc
+index 187acf1..401663f 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/point_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/point_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/psa_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/psa_head.cpython-38.pyc
+index b4286c0..423319c 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/psa_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/psa_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/psp_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/psp_head.cpython-38.pyc
+index 1439344..42a948e 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/psp_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/psp_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/sct_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/sct_head.cpython-38.pyc
+index 655d3d0..0451dde 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/sct_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/sct_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/sct_head_auxiliary.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/sct_head_auxiliary.cpython-38.pyc
+index 989a031..de1ae80 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/sct_head_auxiliary.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/sct_head_auxiliary.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/segformer_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/segformer_head.cpython-38.pyc
+index 2318776..0492acc 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/segformer_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/segformer_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/segmenter_mask_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/segmenter_mask_head.cpython-38.pyc
+index 7101825..32fd475 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/segmenter_mask_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/segmenter_mask_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/sep_aspp_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/sep_aspp_head.cpython-38.pyc
+index 2dfeafb..9141baa 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/sep_aspp_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/sep_aspp_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/sep_fcn_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/sep_fcn_head.cpython-38.pyc
+index 2e2fd28..6421f48 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/sep_fcn_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/sep_fcn_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/setr_mla_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/setr_mla_head.cpython-38.pyc
+index 75a0b49..a69f987 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/setr_mla_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/setr_mla_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/setr_up_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/setr_up_head.cpython-38.pyc
+index f2e4048..357e62d 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/setr_up_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/setr_up_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/stdc_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/stdc_head.cpython-38.pyc
+index af0fc05..7d13c47 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/stdc_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/stdc_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/uper_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/uper_head.cpython-38.pyc
+index fc4301a..524d45f 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/uper_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/uper_head.cpython-38.pyc differ
+diff --git a/mmseg/models/decode_heads/__pycache__/vit_guidance_head.cpython-38.pyc b/mmseg/models/decode_heads/__pycache__/vit_guidance_head.cpython-38.pyc
+index 7325fa1..389e115 100644
+Binary files a/mmseg/models/decode_heads/__pycache__/vit_guidance_head.cpython-38.pyc and b/mmseg/models/decode_heads/__pycache__/vit_guidance_head.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/__init__.cpython-38.pyc b/mmseg/models/losses/__pycache__/__init__.cpython-38.pyc
+index 630d399..fed0bdb 100644
+Binary files a/mmseg/models/losses/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/losses/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/accuracy.cpython-38.pyc b/mmseg/models/losses/__pycache__/accuracy.cpython-38.pyc
+index 2f4fc23..841f239 100644
+Binary files a/mmseg/models/losses/__pycache__/accuracy.cpython-38.pyc and b/mmseg/models/losses/__pycache__/accuracy.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/alignment_loss.cpython-38.pyc b/mmseg/models/losses/__pycache__/alignment_loss.cpython-38.pyc
+index d206acc..2a22418 100644
+Binary files a/mmseg/models/losses/__pycache__/alignment_loss.cpython-38.pyc and b/mmseg/models/losses/__pycache__/alignment_loss.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/cross_entropy_loss.cpython-38.pyc b/mmseg/models/losses/__pycache__/cross_entropy_loss.cpython-38.pyc
+index 04d152f..12ae76d 100644
+Binary files a/mmseg/models/losses/__pycache__/cross_entropy_loss.cpython-38.pyc and b/mmseg/models/losses/__pycache__/cross_entropy_loss.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/dice_loss.cpython-38.pyc b/mmseg/models/losses/__pycache__/dice_loss.cpython-38.pyc
+index ab40b3d..481c726 100644
+Binary files a/mmseg/models/losses/__pycache__/dice_loss.cpython-38.pyc and b/mmseg/models/losses/__pycache__/dice_loss.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/focal_loss.cpython-38.pyc b/mmseg/models/losses/__pycache__/focal_loss.cpython-38.pyc
+index fc85683..7255a97 100644
+Binary files a/mmseg/models/losses/__pycache__/focal_loss.cpython-38.pyc and b/mmseg/models/losses/__pycache__/focal_loss.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/lovasz_loss.cpython-38.pyc b/mmseg/models/losses/__pycache__/lovasz_loss.cpython-38.pyc
+index aed412d..7d1ac1d 100644
+Binary files a/mmseg/models/losses/__pycache__/lovasz_loss.cpython-38.pyc and b/mmseg/models/losses/__pycache__/lovasz_loss.cpython-38.pyc differ
+diff --git a/mmseg/models/losses/__pycache__/utils.cpython-38.pyc b/mmseg/models/losses/__pycache__/utils.cpython-38.pyc
+index 3ab59da..68b300a 100644
+Binary files a/mmseg/models/losses/__pycache__/utils.cpython-38.pyc and b/mmseg/models/losses/__pycache__/utils.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/__init__.cpython-38.pyc b/mmseg/models/necks/__pycache__/__init__.cpython-38.pyc
+index 5561b87..6718dc6 100644
+Binary files a/mmseg/models/necks/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/necks/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/featurepyramid.cpython-38.pyc b/mmseg/models/necks/__pycache__/featurepyramid.cpython-38.pyc
+index a69b85c..013e14c 100644
+Binary files a/mmseg/models/necks/__pycache__/featurepyramid.cpython-38.pyc and b/mmseg/models/necks/__pycache__/featurepyramid.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/fpn.cpython-38.pyc b/mmseg/models/necks/__pycache__/fpn.cpython-38.pyc
+index 69fa1d3..0e045c8 100644
+Binary files a/mmseg/models/necks/__pycache__/fpn.cpython-38.pyc and b/mmseg/models/necks/__pycache__/fpn.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/ic_neck.cpython-38.pyc b/mmseg/models/necks/__pycache__/ic_neck.cpython-38.pyc
+index 89b8868..cce5ea8 100644
+Binary files a/mmseg/models/necks/__pycache__/ic_neck.cpython-38.pyc and b/mmseg/models/necks/__pycache__/ic_neck.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/jpu.cpython-38.pyc b/mmseg/models/necks/__pycache__/jpu.cpython-38.pyc
+index 139b693..a8310f6 100644
+Binary files a/mmseg/models/necks/__pycache__/jpu.cpython-38.pyc and b/mmseg/models/necks/__pycache__/jpu.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/mla_neck.cpython-38.pyc b/mmseg/models/necks/__pycache__/mla_neck.cpython-38.pyc
+index 639c308..d801f01 100644
+Binary files a/mmseg/models/necks/__pycache__/mla_neck.cpython-38.pyc and b/mmseg/models/necks/__pycache__/mla_neck.cpython-38.pyc differ
+diff --git a/mmseg/models/necks/__pycache__/multilevel_neck.cpython-38.pyc b/mmseg/models/necks/__pycache__/multilevel_neck.cpython-38.pyc
+index 5e1a9ae..f51d506 100644
+Binary files a/mmseg/models/necks/__pycache__/multilevel_neck.cpython-38.pyc and b/mmseg/models/necks/__pycache__/multilevel_neck.cpython-38.pyc differ
+diff --git a/mmseg/models/segmentors/__pycache__/__init__.cpython-38.pyc b/mmseg/models/segmentors/__pycache__/__init__.cpython-38.pyc
+index d73f04e..0695e1c 100644
+Binary files a/mmseg/models/segmentors/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/segmentors/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/segmentors/__pycache__/base.cpython-38.pyc b/mmseg/models/segmentors/__pycache__/base.cpython-38.pyc
+index 93f4148..456c42a 100644
+Binary files a/mmseg/models/segmentors/__pycache__/base.cpython-38.pyc and b/mmseg/models/segmentors/__pycache__/base.cpython-38.pyc differ
+diff --git a/mmseg/models/segmentors/__pycache__/cascade_encoder_decoder.cpython-38.pyc b/mmseg/models/segmentors/__pycache__/cascade_encoder_decoder.cpython-38.pyc
+index 8e1036a..c97777e 100644
+Binary files a/mmseg/models/segmentors/__pycache__/cascade_encoder_decoder.cpython-38.pyc and b/mmseg/models/segmentors/__pycache__/cascade_encoder_decoder.cpython-38.pyc differ
+diff --git a/mmseg/models/segmentors/__pycache__/encoder_decoder.cpython-38.pyc b/mmseg/models/segmentors/__pycache__/encoder_decoder.cpython-38.pyc
+index a05b7a0..d8f7ba0 100644
+Binary files a/mmseg/models/segmentors/__pycache__/encoder_decoder.cpython-38.pyc and b/mmseg/models/segmentors/__pycache__/encoder_decoder.cpython-38.pyc differ
+diff --git a/mmseg/models/segmentors/__pycache__/encoder_decoder_distill.cpython-38.pyc b/mmseg/models/segmentors/__pycache__/encoder_decoder_distill.cpython-38.pyc
+index 5f63f23..d36b224 100644
+Binary files a/mmseg/models/segmentors/__pycache__/encoder_decoder_distill.cpython-38.pyc and b/mmseg/models/segmentors/__pycache__/encoder_decoder_distill.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/__init__.cpython-38.pyc b/mmseg/models/utils/__pycache__/__init__.cpython-38.pyc
+index 683f32c..a2e0ebf 100644
+Binary files a/mmseg/models/utils/__pycache__/__init__.cpython-38.pyc and b/mmseg/models/utils/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/embed.cpython-38.pyc b/mmseg/models/utils/__pycache__/embed.cpython-38.pyc
+index 83b6c44..67f91eb 100644
+Binary files a/mmseg/models/utils/__pycache__/embed.cpython-38.pyc and b/mmseg/models/utils/__pycache__/embed.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/inverted_residual.cpython-38.pyc b/mmseg/models/utils/__pycache__/inverted_residual.cpython-38.pyc
+index 22d6656..544ee73 100644
+Binary files a/mmseg/models/utils/__pycache__/inverted_residual.cpython-38.pyc and b/mmseg/models/utils/__pycache__/inverted_residual.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/make_divisible.cpython-38.pyc b/mmseg/models/utils/__pycache__/make_divisible.cpython-38.pyc
+index 4fbe4de..97fb9d8 100644
+Binary files a/mmseg/models/utils/__pycache__/make_divisible.cpython-38.pyc and b/mmseg/models/utils/__pycache__/make_divisible.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/res_layer.cpython-38.pyc b/mmseg/models/utils/__pycache__/res_layer.cpython-38.pyc
+index 633e38e..af45195 100644
+Binary files a/mmseg/models/utils/__pycache__/res_layer.cpython-38.pyc and b/mmseg/models/utils/__pycache__/res_layer.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/se_layer.cpython-38.pyc b/mmseg/models/utils/__pycache__/se_layer.cpython-38.pyc
+index f49d7e3..685ff38 100644
+Binary files a/mmseg/models/utils/__pycache__/se_layer.cpython-38.pyc and b/mmseg/models/utils/__pycache__/se_layer.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/self_attention_block.cpython-38.pyc b/mmseg/models/utils/__pycache__/self_attention_block.cpython-38.pyc
+index 22de1b2..097b8fc 100644
+Binary files a/mmseg/models/utils/__pycache__/self_attention_block.cpython-38.pyc and b/mmseg/models/utils/__pycache__/self_attention_block.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/shape_convert.cpython-38.pyc b/mmseg/models/utils/__pycache__/shape_convert.cpython-38.pyc
+index 530acc1..34ee7fa 100644
+Binary files a/mmseg/models/utils/__pycache__/shape_convert.cpython-38.pyc and b/mmseg/models/utils/__pycache__/shape_convert.cpython-38.pyc differ
+diff --git a/mmseg/models/utils/__pycache__/up_conv_block.cpython-38.pyc b/mmseg/models/utils/__pycache__/up_conv_block.cpython-38.pyc
+index a8b415e..e93e7e3 100644
+Binary files a/mmseg/models/utils/__pycache__/up_conv_block.cpython-38.pyc and b/mmseg/models/utils/__pycache__/up_conv_block.cpython-38.pyc differ
+diff --git a/mmseg/ops/__pycache__/__init__.cpython-38.pyc b/mmseg/ops/__pycache__/__init__.cpython-38.pyc
+index 318e0b4..dc045e5 100644
+Binary files a/mmseg/ops/__pycache__/__init__.cpython-38.pyc and b/mmseg/ops/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/ops/__pycache__/encoding.cpython-38.pyc b/mmseg/ops/__pycache__/encoding.cpython-38.pyc
+index d246ed4..b6ebdb0 100644
+Binary files a/mmseg/ops/__pycache__/encoding.cpython-38.pyc and b/mmseg/ops/__pycache__/encoding.cpython-38.pyc differ
+diff --git a/mmseg/ops/__pycache__/wrappers.cpython-38.pyc b/mmseg/ops/__pycache__/wrappers.cpython-38.pyc
+index 3b2813f..aca9189 100644
+Binary files a/mmseg/ops/__pycache__/wrappers.cpython-38.pyc and b/mmseg/ops/__pycache__/wrappers.cpython-38.pyc differ
+diff --git a/mmseg/utils/__pycache__/__init__.cpython-38.pyc b/mmseg/utils/__pycache__/__init__.cpython-38.pyc
+index 154253b..972b00c 100644
+Binary files a/mmseg/utils/__pycache__/__init__.cpython-38.pyc and b/mmseg/utils/__pycache__/__init__.cpython-38.pyc differ
+diff --git a/mmseg/utils/__pycache__/collect_env.cpython-38.pyc b/mmseg/utils/__pycache__/collect_env.cpython-38.pyc
+index 337bb7f..cc90aea 100644
+Binary files a/mmseg/utils/__pycache__/collect_env.cpython-38.pyc and b/mmseg/utils/__pycache__/collect_env.cpython-38.pyc differ
+diff --git a/mmseg/utils/__pycache__/logger.cpython-38.pyc b/mmseg/utils/__pycache__/logger.cpython-38.pyc
+index d8ede67..c380bcf 100644
+Binary files a/mmseg/utils/__pycache__/logger.cpython-38.pyc and b/mmseg/utils/__pycache__/logger.cpython-38.pyc differ
+diff --git a/mmseg/utils/__pycache__/misc.cpython-38.pyc b/mmseg/utils/__pycache__/misc.cpython-38.pyc
+index fd3867b..ab17de4 100644
+Binary files a/mmseg/utils/__pycache__/misc.cpython-38.pyc and b/mmseg/utils/__pycache__/misc.cpython-38.pyc differ
+diff --git a/mmseg/utils/__pycache__/set_env.cpython-38.pyc b/mmseg/utils/__pycache__/set_env.cpython-38.pyc
+index 3e151b8..0109db3 100644
+Binary files a/mmseg/utils/__pycache__/set_env.cpython-38.pyc and b/mmseg/utils/__pycache__/set_env.cpython-38.pyc differ
+diff --git a/mmseg/utils/__pycache__/util_distribution.cpython-38.pyc b/mmseg/utils/__pycache__/util_distribution.cpython-38.pyc
+index 8fd1daa..dfcf389 100644
+Binary files a/mmseg/utils/__pycache__/util_distribution.cpython-38.pyc and b/mmseg/utils/__pycache__/util_distribution.cpython-38.pyc differ

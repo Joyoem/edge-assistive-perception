@@ -1,0 +1,24 @@
+train/val/test = 36922/4443/4888
+cached 6 background-noise tensors on GPU
+model: MLPerf-Tiny-style DS-CNN
+params: 23180
+feature shape: (1, 1, 10, 49)
+model input: (1, 1, 49, 10)
+Traceback (most recent call last):
+  File "/home/zhaoyan/kws_benchmark/scripts/train_dscnn_gsc12.py", line 302, in <module>
+    logits = model(feat)
+  File "/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhaoyan/kws_benchmark/scripts/train_dscnn_gsc12.py", line 210, in forward
+    x = F.relu(self.bn(self.conv(x)))
+  File "/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 548, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 543, in _conv_forward
+    return F.conv2d(
+RuntimeError: Expected 3D (unbatched) or 4D (batched) input to conv2d, but got input of size: [100, 1, 1, 58, 12]

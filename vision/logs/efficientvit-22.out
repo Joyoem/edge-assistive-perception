@@ -1,0 +1,28 @@
+Thu Oct 15 16:04:26 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   46C    P8             19W /  170W |       1MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Traceback (most recent call last):
+  File "/home/zhaoyan/vision_benchmark/repos/efficientvit/applications/efficientvit_seg/eval_efficientvit_seg_model.py", line 21, in <module>
+    from efficientvit.apps.utils import AverageMeter
+  File "/home/zhaoyan/vision_benchmark/repos/efficientvit/efficientvit/apps/utils/__init__.py", line 3, in <module>
+    from .export import *
+  File "/home/zhaoyan/vision_benchmark/repos/efficientvit/efficientvit/apps/utils/export.py", line 5, in <module>
+    import onnx
+ModuleNotFoundError: No module named 'onnx'

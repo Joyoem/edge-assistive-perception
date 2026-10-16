@@ -1,0 +1,186 @@
+Thu Oct 15 19:01:22 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   47C    P8             19W /  170W |       1MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+OneLogger: Setting error_handling_strategy to DISABLE_QUIETLY_AND_REPORT_METRIC_ERROR for rank (rank=0) with OneLogger disabled. To override: explicitly set error_handling_strategy parameter.
+No exporters were provided. This means that no telemetry data will be collected.
+[NeMo W 2026-10-15 19:01:29 classification_models:641] Please use the EncDecSpeakerLabelModel instead of this model. EncDecClassificationModel model is kept for backward compatibility with older models.
+[NeMo W 2026-10-15 19:01:29 modelPT:175] If you intend to do training or fine-tuning, please call the ModelPT.setup_training_data() method and provide a valid configuration file to setup the train data loader.
+    Train config : 
+    manifest_filepath: /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/train_manifest.json
+    sample_rate: 16000
+    labels:
+    - 'yes'
+    - 'no'
+    - up
+    - down
+    - left
+    - right
+    - 'on'
+    - 'off'
+    - stop
+    - go
+    - unknown
+    - silence
+    batch_size: 128
+    shuffle: true
+    is_tarred: false
+    tarred_audio_filepaths: null
+    tarred_shard_strategy: scatter
+    augmentor:
+      shift:
+        prob: 1.0
+        min_shift_ms: -5.0
+        max_shift_ms: 5.0
+      white_noise:
+        prob: 1.0
+        min_level: -90
+        max_level: -46
+    num_workers: 12
+    
+[NeMo W 2026-10-15 19:01:29 modelPT:182] If you intend to do validation, please call the ModelPT.setup_validation_data() or ModelPT.setup_multiple_validation_data() method and provide a valid configuration file to setup the validation data loader(s). 
+    Validation config : 
+    manifest_filepath:
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/validation_manifest.json
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/test_manifest.json
+    sample_rate: 16000
+    labels:
+    - 'yes'
+    - 'no'
+    - up
+    - down
+    - left
+    - right
+    - 'on'
+    - 'off'
+    - stop
+    - go
+    - unknown
+    - silence
+    batch_size: 128
+    shuffle: false
+    val_loss_idx: 0
+    num_workers: 12
+    
+[NeMo W 2026-10-15 19:01:29 modelPT:189] Please call the ModelPT.setup_test_data() or ModelPT.setup_multiple_test_data() method and provide a valid configuration file to setup the test data loader(s).
+    Test config : 
+    manifest_filepath:
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/validation_manifest.json
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/test_manifest.json
+    sample_rate: 16000
+    labels:
+    - 'yes'
+    - 'no'
+    - up
+    - down
+    - left
+    - right
+    - 'on'
+    - 'off'
+    - stop
+    - go
+    - unknown
+    - silence
+    batch_size: 128
+    shuffle: false
+    test_loss_idx: 0
+    num_workers: 12
+    pin_memory: true
+    
+[NeMo W 2026-10-15 19:01:29 nemo_logging:364] /home/zhaoyan/data/.conda/envs/kws-nemo/lib/python3.12/site-packages/nemo/core/connectors/save_restore_connector.py:762: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+      return torch.load(model_weights, map_location=map_location)
+    
+[NeMo I 2026-10-15 19:01:29 save_restore_connector:287] Model EncDecClassificationModel was successfully restored from /home/zhaoyan/kws_benchmark/checkpoints/matchboxnet3x1x64_gscv2_subset.nemo.
+labels: ['yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go', 'unknown', 'silence']
+test samples: 4888
+wave shape: (1, 16000)
+feature shape: (1, 64, 128)
+sanity prediction: down
+500/4888 running_acc=97.000%
+1000/4888 running_acc=97.700%
+1500/4888 running_acc=98.133%
+2000/4888 running_acc=98.050%
+2500/4888 running_acc=97.800%
+3000/4888 running_acc=98.000%
+3500/4888 running_acc=97.914%
+4000/4888 running_acc=98.125%
+4500/4888 running_acc=98.000%
+
+===== FINAL RESULT =====
+{
+  "benchmark": "GSC12 real-test compute benchmark",
+  "model": "MatchboxNet-3x1x64",
+  "checkpoint": "/home/zhaoyan/kws_benchmark/checkpoints/matchboxnet3x1x64_gscv2_subset.nemo",
+  "num_test_samples": 4888,
+  "accuracy": 0.9815875613747954,
+  "labels": [
+    "yes",
+    "no",
+    "up",
+    "down",
+    "left",
+    "right",
+    "on",
+    "off",
+    "stop",
+    "go",
+    "unknown",
+    "silence"
+  ],
+  "params": 74892,
+  "input_audio": "16 kHz / 1 s",
+  "timing_definition": {
+    "batch_size": 1,
+    "precision": "FP32",
+    "disk_io": "excluded",
+    "frontend": "official NeMo preprocessor + crop/pad",
+    "model": "encoder + decoder GPU forward",
+    "total_compute": "in-memory CPU waveform -> H2D -> frontend -> encoder -> decoder -> logits"
+  },
+  "frontend_gpu_ms": {
+    "mean": 0.5062376690903486,
+    "p50": 0.4915199875831604,
+    "p95": 0.6164479851722717,
+    "p99": 0.8053327828645707
+  },
+  "model_gpu_ms": {
+    "mean": 1.8225593179122905,
+    "p50": 1.7636480331420898,
+    "p95": 2.2650880813598633,
+    "p99": 2.9384503006935123
+  },
+  "total_compute_ms": {
+    "mean": 2.4421106317829255,
+    "p50": 2.364744999795221,
+    "p95": 3.0140115835820325,
+    "p99": 3.8994023701525293
+  },
+  "peak_vram_mb": 9.77197265625,
+  "preprocessor_config": {
+    "_target_": "nemo.collections.asr.modules.AudioToMFCCPreprocessor",
+    "window_size": 0.025,
+    "window_stride": 0.01,
+    "window": "hann",
+    "n_mels": 64,
+    "n_mfcc": 64,
+    "n_fft": 512
+  }
+}
+
+saved: /home/zhaoyan/kws_benchmark/results/matchboxnet3x1x64_gsc12_real.json

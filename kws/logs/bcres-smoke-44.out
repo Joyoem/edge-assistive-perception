@@ -1,0 +1,29 @@
+/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torchaudio/_backend/utils.py:213: UserWarning: In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec` under the hood. Some parameters like ``normalize``, ``format``, ``buffer_size``, and ``backend`` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead: https://docs.pytorch.org/torchcodec/stable/generated/torchcodec.decoders.AudioDecoder.html#torchcodec.decoders.AudioDecoder.
+  warnings.warn(
+labels:	 {'_silence_': 0, '_unknown_': 1, 'down': 2, 'go': 3, 'left': 4, 'no': 5, 'off': 6, 'on': 7, 'right': 8, 'stop': 9, 'up': 10, 'yes': 11}
+train/val/test = 36922/4443/4888
+frequency specaug 2 7
+time specaug 2 20
+cached 6 background-noise tensors on GPU
+model: BC-ResNet-8
+params: 321068
+epoch 001/001 lr=0.020000 train=2.0769/28.37% val=1.0483/66.80% time=263.6s
+
+===== FINAL TEST =====
+{
+  "model": "BC-ResNet-8",
+  "seed": 1337,
+  "epochs": 1,
+  "best_epoch": 1,
+  "best_val_acc": 0.6680171055593068,
+  "test_loss": 0.9991320513383944,
+  "test_acc": 0.6720540098199672,
+  "params": 321068,
+  "train_samples": 36922,
+  "val_samples": 4443,
+  "test_samples": 4888,
+  "total_seconds": 304.1017614029988
+}
+
+run: /data/zhaoyan/checkpoints/bcresnet/bcresnet8_seed1337_ep1
+/var/spool/slurmd/job00044/slurm_script: line 23: --num-workers: command not found

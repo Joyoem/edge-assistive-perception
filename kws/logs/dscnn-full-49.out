@@ -1,0 +1,57 @@
+train/val/test = 36922/4443/4888
+cached 6 background-noise tensors on GPU
+model: MLPerf-Tiny-style DS-CNN
+params: 23180
+feature shape: (1, 1, 10, 49)
+model input: (1, 1, 49, 10)
+epoch 001/036 lr=0.0005 train=1.7389/45.65% val=0.9054/72.41% time=12.2s
+epoch 002/036 lr=0.0005 train=0.8588/74.31% val=0.4973/84.67% time=11.8s
+epoch 003/036 lr=0.0005 train=0.6129/80.74% val=0.4145/87.37% time=11.8s
+epoch 004/036 lr=0.0005 train=0.5172/83.26% val=0.3381/89.06% time=11.8s
+epoch 005/036 lr=0.0005 train=0.4634/85.04% val=0.3007/90.34% time=11.8s
+epoch 006/036 lr=0.0005 train=0.4291/85.83% val=0.3020/90.82% time=11.8s
+epoch 007/036 lr=0.0005 train=0.4064/86.67% val=0.3330/91.54% time=11.8s
+epoch 008/036 lr=0.0005 train=0.3893/87.03% val=0.2649/91.63% time=11.8s
+epoch 009/036 lr=0.0005 train=0.3785/87.66% val=0.2763/92.03% time=11.9s
+epoch 010/036 lr=0.0005 train=0.3624/88.02% val=0.3428/91.85% time=11.8s
+epoch 011/036 lr=0.0005 train=0.3521/88.31% val=0.2654/92.35% time=11.8s
+epoch 012/036 lr=0.0005 train=0.3443/88.61% val=0.2403/92.44% time=11.8s
+epoch 013/036 lr=0.0001 train=0.3245/89.20% val=0.2603/93.11% time=11.8s
+epoch 014/036 lr=0.0001 train=0.3169/89.55% val=0.2635/93.09% time=11.8s
+epoch 015/036 lr=0.0001 train=0.3085/89.79% val=0.2370/93.18% time=11.8s
+epoch 016/036 lr=0.0001 train=0.3067/89.79% val=0.2682/93.02% time=11.8s
+epoch 017/036 lr=0.0001 train=0.3102/89.53% val=0.3092/93.36% time=11.8s
+epoch 018/036 lr=0.0001 train=0.3057/89.94% val=0.2331/93.02% time=11.8s
+epoch 019/036 lr=0.0001 train=0.3061/89.68% val=0.2725/93.34% time=11.8s
+epoch 020/036 lr=0.0001 train=0.3039/89.78% val=0.2513/93.23% time=11.8s
+epoch 021/036 lr=0.0001 train=0.3017/89.89% val=0.2707/93.16% time=11.8s
+epoch 022/036 lr=0.0001 train=0.2994/89.99% val=0.2398/93.23% time=11.8s
+epoch 023/036 lr=0.0001 train=0.2952/90.29% val=0.3023/93.25% time=11.8s
+epoch 024/036 lr=0.0001 train=0.3029/90.13% val=0.2525/93.14% time=11.8s
+epoch 025/036 lr=2e-05 train=0.2965/90.07% val=0.2719/93.50% time=11.8s
+epoch 026/036 lr=2e-05 train=0.2912/90.35% val=0.2741/93.54% time=11.8s
+epoch 027/036 lr=2e-05 train=0.2938/90.22% val=0.2903/93.29% time=11.8s
+epoch 028/036 lr=2e-05 train=0.2905/90.27% val=0.3117/93.29% time=11.8s
+epoch 029/036 lr=2e-05 train=0.2919/90.20% val=0.3150/93.29% time=11.8s
+epoch 030/036 lr=2e-05 train=0.2882/90.34% val=0.2821/93.38% time=11.8s
+epoch 031/036 lr=2e-05 train=0.2890/90.26% val=0.2654/93.45% time=11.8s
+epoch 032/036 lr=2e-05 train=0.2858/90.48% val=0.2493/93.50% time=11.8s
+epoch 033/036 lr=2e-05 train=0.2874/90.50% val=0.2471/93.54% time=11.8s
+epoch 034/036 lr=2e-05 train=0.2919/90.26% val=0.2594/93.38% time=11.8s
+epoch 035/036 lr=2e-05 train=0.2906/90.30% val=0.2759/93.45% time=11.8s
+epoch 036/036 lr=2e-05 train=0.2909/90.25% val=0.2715/93.43% time=11.8s
+
+===== FINAL TEST =====
+{
+  "model": "MLPerf-Tiny-style DS-CNN",
+  "epochs": 36,
+  "best_epoch": 26,
+  "best_val_acc": 0.9354040063020481,
+  "test_acc": 0.9382160392798691,
+  "test_loss": 0.2639999701740577,
+  "params": 23180,
+  "train_samples": 36922,
+  "val_samples": 4443,
+  "test_samples": 4888,
+  "total_seconds": 430.86254007098614
+}

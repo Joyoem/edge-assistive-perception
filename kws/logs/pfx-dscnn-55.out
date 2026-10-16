@@ -1,0 +1,39 @@
+model=dscnn samples=4888
+ 100 ms acc= 10.86% true_p=0.1014 max_p=0.2305
+ 150 ms acc= 13.48% true_p=0.1165 max_p=0.2331
+ 200 ms acc= 18.25% true_p=0.1396 max_p=0.2497
+ 250 ms acc= 26.98% true_p=0.1913 max_p=0.2803
+ 300 ms acc= 33.02% true_p=0.2389 max_p=0.3306
+ 350 ms acc= 41.73% true_p=0.3164 max_p=0.4050
+ 400 ms acc= 48.08% true_p=0.3783 max_p=0.4685
+ 450 ms acc= 56.28% true_p=0.4537 max_p=0.5414
+ 500 ms acc= 61.91% true_p=0.5089 max_p=0.5942
+ 550 ms acc= 69.82% true_p=0.5855 max_p=0.6618
+ 600 ms acc= 75.39% true_p=0.6427 max_p=0.7106
+ 650 ms acc= 80.50% true_p=0.7036 max_p=0.7629
+ 700 ms acc= 84.57% true_p=0.7452 max_p=0.7948
+ 750 ms acc= 88.18% true_p=0.7883 max_p=0.8301
+ 800 ms acc= 90.04% true_p=0.8121 max_p=0.8488
+ 850 ms acc= 91.73% true_p=0.8328 max_p=0.8648
+ 900 ms acc= 92.76% true_p=0.8444 max_p=0.8728
+ 950 ms acc= 93.72% true_p=0.8536 max_p=0.8794
+1000 ms acc= 93.82% true_p=0.8563 max_p=0.8816
+
+===== SUMMARY =====
+{
+  "model": "dscnn",
+  "full_accuracy": 0.9382160392798691,
+  "T90_ms": 700,
+  "T95_ms": 800,
+  "T90_sustained_ms": 700,
+  "T95_sustained_ms": 800,
+  "stable_correct_decision": {
+    "num_samples_with_stable_correct_decision": 4586,
+    "fraction": 0.9382160392798691,
+    "median_ms": 450.0,
+    "p75_ms": 600.0,
+    "p90_ms": 750.0
+  }
+}
+
+saved: /home/zhaoyan/kws_benchmark/results/prefix_dscnn.json

@@ -1,0 +1,39 @@
+model=reptor9 samples=4888
+ 100 ms acc= 11.33% true_p=0.1109 max_p=0.9546
+ 150 ms acc= 15.96% true_p=0.1537 max_p=0.9094
+ 200 ms acc= 21.60% true_p=0.2092 max_p=0.8751
+ 250 ms acc= 29.73% true_p=0.2868 max_p=0.8198
+ 300 ms acc= 37.87% true_p=0.3658 max_p=0.8056
+ 350 ms acc= 46.83% true_p=0.4527 max_p=0.7938
+ 400 ms acc= 54.79% true_p=0.5305 max_p=0.8037
+ 450 ms acc= 62.54% true_p=0.6095 max_p=0.8191
+ 500 ms acc= 69.72% true_p=0.6784 max_p=0.8416
+ 550 ms acc= 76.66% true_p=0.7489 max_p=0.8655
+ 600 ms acc= 82.65% true_p=0.8095 max_p=0.8985
+ 650 ms acc= 86.52% true_p=0.8520 max_p=0.9191
+ 700 ms acc= 90.16% true_p=0.8878 max_p=0.9381
+ 750 ms acc= 93.13% true_p=0.9183 max_p=0.9532
+ 800 ms acc= 94.72% true_p=0.9339 max_p=0.9629
+ 850 ms acc= 95.62% true_p=0.9467 max_p=0.9695
+ 900 ms acc= 96.24% true_p=0.9554 max_p=0.9747
+ 950 ms acc= 96.85% true_p=0.9604 max_p=0.9772
+1000 ms acc= 97.20% true_p=0.9641 max_p=0.9792
+
+===== SUMMARY =====
+{
+  "model": "reptor9",
+  "full_accuracy": 0.9719721767594108,
+  "T90_ms": 700,
+  "T95_ms": 750,
+  "T90_sustained_ms": 700,
+  "T95_sustained_ms": 750,
+  "stable_correct_decision": {
+    "num_samples_with_stable_correct_decision": 4751,
+    "fraction": 0.9719721767594108,
+    "median_ms": 400.0,
+    "p75_ms": 550.0,
+    "p90_ms": 700.0
+  }
+}
+
+saved: /home/zhaoyan/kws_benchmark/results/prefix_reptor9.json

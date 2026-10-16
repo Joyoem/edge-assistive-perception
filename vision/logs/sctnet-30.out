@@ -1,0 +1,46 @@
+===== IMPORT CHECK =====
+mmseg path: /home/zhaoyan/vision_benchmark/repos/SCTNet/mmseg/__init__.py
+EncoderDecoder_Distill: <class 'mmseg.models.segmentors.encoder_decoder_distill.EncoderDecoder_Distill'>
+2026-10-15 17:12:48,800 - mmseg - INFO - Multi-processing start method is `None`
+2026-10-15 17:12:48,801 - mmseg - INFO - OpenCV num_threads is `4
+2026-10-15 17:12:48,830 - mmseg - INFO - Loaded 2000 images
+Traceback (most recent call last):
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 52, in build_from_cfg
+    return obj_cls(**args)
+  File "/home/zhaoyan/vision_benchmark/repos/SCTNet/mmseg/models/backbones/sctnet.py", line 87, in __init__
+    if self.init_cfg.type == 'Pretrained':
+AttributeError: 'NoneType' object has no attribute 'type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 52, in build_from_cfg
+    return obj_cls(**args)
+  File "/home/zhaoyan/vision_benchmark/repos/SCTNet/mmseg/models/segmentors/encoder_decoder_distill.py", line 36, in __init__
+    self.backbone = builder.build_backbone(backbone)
+  File "/home/zhaoyan/vision_benchmark/repos/SCTNet/mmseg/models/builder.py", line 20, in build_backbone
+    return BACKBONES.build(cfg)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 215, in build
+    return self.build_func(*args, **kwargs, registry=self)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/cnn/builder.py", line 27, in build_model_from_cfg
+    return build_from_cfg(cfg, registry, default_args)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 55, in build_from_cfg
+    raise type(e)(f'{obj_cls.__name__}: {e}')
+AttributeError: SCTNet: 'NoneType' object has no attribute 'type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "tools/test.py", line 323, in <module>
+    main()
+  File "tools/test.py", line 221, in main
+    model = build_segmentor(cfg.model, test_cfg=cfg.get('test_cfg'))
+  File "/home/zhaoyan/vision_benchmark/repos/SCTNet/mmseg/models/builder.py", line 48, in build_segmentor
+    return SEGMENTORS.build(
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 215, in build
+    return self.build_func(*args, **kwargs, registry=self)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/cnn/builder.py", line 27, in build_model_from_cfg
+    return build_from_cfg(cfg, registry, default_args)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 55, in build_from_cfg
+    raise type(e)(f'{obj_cls.__name__}: {e}')
+AttributeError: EncoderDecoder_Distill: SCTNet: 'NoneType' object has no attribute 'type'

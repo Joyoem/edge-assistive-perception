@@ -1,0 +1,35 @@
+Thu Oct 15 18:24:22 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   47C    P8             19W /  170W |       1MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/home/zhaoyan/data/.conda/envs/vision-modern/lib/python3.10/site-packages/torchaudio/_backend/utils.py:213: UserWarning: In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec` under the hood. Some parameters like ``normalize``, ``format``, ``buffer_size``, and ``backend`` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead: https://docs.pytorch.org/torchcodec/stable/generated/torchcodec.decoders.AudioDecoder.html#torchcodec.decoders.AudioDecoder.
+  warnings.warn(
+data root : /data/zhaoyan/datasets/speech_commands_v0.02
+manifest  : /home/zhaoyan/kws_benchmark/repos/RepTor-Reproduction/manifests/gsc12_test.csv
+test samples: 4888
+Traceback (most recent call last):
+  File "/home/zhaoyan/kws_benchmark/scripts/bench_reptor_gsc12.py", line 89, in <module>
+    wav0 = ds._load(row0)
+  File "/home/zhaoyan/kws_benchmark/repos/RepTor-Reproduction/reptor/data/gsc.py", line 43, in _load
+    x, sr = torchaudio.load(self.data_root/row["path"])
+  File "/home/zhaoyan/data/.conda/envs/vision-modern/lib/python3.10/site-packages/torchaudio/_backend/utils.py", line 221, in load
+    backend = dispatcher(uri, format, backend)
+  File "/home/zhaoyan/data/.conda/envs/vision-modern/lib/python3.10/site-packages/torchaudio/_backend/utils.py", line 117, in dispatcher
+    raise RuntimeError(f"Couldn't find appropriate backend to handle uri {uri} and format {format}.")
+RuntimeError: Couldn't find appropriate backend to handle uri /data/zhaoyan/datasets/speech_commands_v0.02/down/022cd682_nohash_0.wav and format None.

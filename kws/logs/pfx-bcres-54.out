@@ -1,0 +1,40 @@
+labels:	 {'_silence_': 0, '_unknown_': 1, 'down': 2, 'go': 3, 'left': 4, 'no': 5, 'off': 6, 'on': 7, 'right': 8, 'stop': 9, 'up': 10, 'yes': 11}
+model=bcresnet8 samples=4888
+ 100 ms acc= 11.80% true_p=0.1148 max_p=0.9393
+ 150 ms acc= 16.88% true_p=0.1623 max_p=0.9104
+ 200 ms acc= 24.14% true_p=0.2292 max_p=0.8842
+ 250 ms acc= 31.94% true_p=0.3057 max_p=0.8673
+ 300 ms acc= 40.08% true_p=0.3886 max_p=0.8525
+ 350 ms acc= 49.57% true_p=0.4799 max_p=0.8500
+ 400 ms acc= 57.65% true_p=0.5627 max_p=0.8508
+ 450 ms acc= 65.73% true_p=0.6407 max_p=0.8532
+ 500 ms acc= 73.42% true_p=0.7140 max_p=0.8653
+ 550 ms acc= 80.69% true_p=0.7838 max_p=0.8848
+ 600 ms acc= 86.21% true_p=0.8434 max_p=0.9127
+ 650 ms acc= 90.16% true_p=0.8850 max_p=0.9301
+ 700 ms acc= 93.72% true_p=0.9183 max_p=0.9470
+ 750 ms acc= 95.70% true_p=0.9414 max_p=0.9608
+ 800 ms acc= 96.67% true_p=0.9553 max_p=0.9712
+ 850 ms acc= 97.48% true_p=0.9645 max_p=0.9754
+ 900 ms acc= 98.00% true_p=0.9706 max_p=0.9783
+ 950 ms acc= 98.42% true_p=0.9747 max_p=0.9805
+1000 ms acc= 98.65% true_p=0.9771 max_p=0.9819
+
+===== SUMMARY =====
+{
+  "model": "bcresnet8",
+  "full_accuracy": 0.9864975450081833,
+  "T90_ms": 650,
+  "T95_ms": 700,
+  "T90_sustained_ms": 650,
+  "T95_sustained_ms": 700,
+  "stable_correct_decision": {
+    "num_samples_with_stable_correct_decision": 4822,
+    "fraction": 0.9864975450081833,
+    "median_ms": 400.0,
+    "p75_ms": 550.0,
+    "p90_ms": 650.0
+  }
+}
+
+saved: /home/zhaoyan/kws_benchmark/results/prefix_bcresnet8.json

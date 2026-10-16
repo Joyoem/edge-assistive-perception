@@ -1,0 +1,84 @@
++ set -euo pipefail
++++ dirname scripts/prepare_data_links.sh
+++ cd scripts
+++ pwd
++ SCRIPT_DIR=/home/zhaoyan/projects/ade20k_checkpoint_benchmark/scripts
++ source /home/zhaoyan/projects/ade20k_checkpoint_benchmark/scripts/common.sh
+++ set -euo pipefail
+++++ dirname /home/zhaoyan/projects/ade20k_checkpoint_benchmark/scripts/common.sh
++++ cd /home/zhaoyan/projects/ade20k_checkpoint_benchmark/scripts/..
++++ pwd
+++ BENCH_PROJECT_ROOT=/home/zhaoyan/projects/ade20k_checkpoint_benchmark
+++ BENCH_CONFIG_FILE=/home/zhaoyan/projects/ade20k_checkpoint_benchmark/benchmark.env
+++ [[ ! -f /home/zhaoyan/projects/ade20k_checkpoint_benchmark/benchmark.env ]]
+++ source /home/zhaoyan/projects/ade20k_checkpoint_benchmark/benchmark.env
++++ BENCH_STORAGE_ROOT=/home/zhaoyan/data/vision_benchmark
++++ BENCH_ADE20K_ROOT=/home/zhaoyan/data/datasets/ADEChallengeData2016
++++ BENCH_DOWNLOAD_ADE20K=1
++++ BENCH_GPU_ID=0
++++ BENCH_INPUT_HEIGHT=512
++++ BENCH_INPUT_WIDTH=512
++++ BENCH_WARMUP=100
++++ BENCH_RUNS=1000
++++ BENCH_SEAFORMER_CKPT_URL=
++++ BENCH_SCTNET_CKPT_URL='https://drive.google.com/file/d/1U5OXyFDBYd3bZLKIAg64BFU-zPDbaO6d/view?usp=sharing'
++++ BENCH_BISENETV2_CKPT_URL=https://github.com/CoinCheung/BiSeNet/releases/download/0.0.0/model_final_v2_ade20k.pth
+++ : /home/zhaoyan/data/vision_benchmark
+++ : /home/zhaoyan/data/datasets/ADEChallengeData2016
+++ BENCH_REPOS_DIR=/home/zhaoyan/data/vision_benchmark/repos
+++ BENCH_WEIGHTS_DIR=/home/zhaoyan/data/vision_benchmark/checkpoints
+++ BENCH_RESULTS_DIR=/home/zhaoyan/data/vision_benchmark/results
+++ BENCH_ENV_PREFIX=/home/zhaoyan/data/vision_benchmark/.conda/envs/vision-benchmark
+++ BENCH_MICROMAMBA=/home/zhaoyan/projects/ade20k_checkpoint_benchmark/.runtime/bin/micromamba
+++ export MAMBA_ROOT_PREFIX=/home/zhaoyan/data/vision_benchmark/.micromamba
+++ MAMBA_ROOT_PREFIX=/home/zhaoyan/data/vision_benchmark/.micromamba
+++ export PIP_CACHE_DIR=/home/zhaoyan/data/vision_benchmark/.cache/pip
+++ PIP_CACHE_DIR=/home/zhaoyan/data/vision_benchmark/.cache/pip
+++ export TORCH_HOME=/home/zhaoyan/data/vision_benchmark/.cache/torch
+++ TORCH_HOME=/home/zhaoyan/data/vision_benchmark/.cache/torch
+++ export XDG_CACHE_HOME=/home/zhaoyan/data/vision_benchmark/.cache
+++ XDG_CACHE_HOME=/home/zhaoyan/data/vision_benchmark/.cache
+++ BENCH_GPU_ID=0
+++ BENCH_INPUT_HEIGHT=512
+++ BENCH_INPUT_WIDTH=512
+++ BENCH_WARMUP=100
+++ BENCH_RUNS=1000
+++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos /home/zhaoyan/data/vision_benchmark/checkpoints /home/zhaoyan/data/vision_benchmark/results /home/zhaoyan/data/vision_benchmark/.cache/pip /home/zhaoyan/data/vision_benchmark/.cache/torch
++ [[ ! -d /home/zhaoyan/data/datasets/ADEChallengeData2016/images/validation ]]
++ [[ ! -d /home/zhaoyan/data/datasets/ADEChallengeData2016/annotations/validation ]]
++ for mmseg_root in "$BENCH_REPOS_DIR/SeaFormer/seaformer-seg" "$BENCH_REPOS_DIR/SCTNet"
++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade
++ link_directory /home/zhaoyan/data/datasets/ADEChallengeData2016 /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade/ADEChallengeData2016
++ local target=/home/zhaoyan/data/datasets/ADEChallengeData2016
++ local link=/home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade/ADEChallengeData2016
+++ dirname /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade/ADEChallengeData2016
++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade
++ [[ -L /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade/ADEChallengeData2016 ]]
+++ readlink -f /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg/data/ade/ADEChallengeData2016
++ current=/data/zhaoyan/datasets/ADEChallengeData2016
+++ readlink -f /home/zhaoyan/data/datasets/ADEChallengeData2016
++ [[ /data/zhaoyan/datasets/ADEChallengeData2016 == \/\d\a\t\a\/\z\h\a\o\y\a\n\/\d\a\t\a\s\e\t\s\/\A\D\E\C\h\a\l\l\e\n\g\e\D\a\t\a\2\0\1\6 ]]
++ return
++ for mmseg_root in "$BENCH_REPOS_DIR/SeaFormer/seaformer-seg" "$BENCH_REPOS_DIR/SCTNet"
++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade
++ link_directory /home/zhaoyan/data/datasets/ADEChallengeData2016 /home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade/ADEChallengeData2016
++ local target=/home/zhaoyan/data/datasets/ADEChallengeData2016
++ local link=/home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade/ADEChallengeData2016
+++ dirname /home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade/ADEChallengeData2016
++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade
++ [[ -L /home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade/ADEChallengeData2016 ]]
+++ readlink -f /home/zhaoyan/data/vision_benchmark/repos/SCTNet/data/ade/ADEChallengeData2016
++ current=/data/zhaoyan/datasets/ADEChallengeData2016
+++ readlink -f /home/zhaoyan/data/datasets/ADEChallengeData2016
++ [[ /data/zhaoyan/datasets/ADEChallengeData2016 == \/\d\a\t\a\/\z\h\a\o\y\a\n\/\d\a\t\a\s\e\t\s\/\A\D\E\C\h\a\l\l\e\n\g\e\D\a\t\a\2\0\1\6 ]]
++ return
++ bisenet_root=/home/zhaoyan/data/vision_benchmark/repos/BiSeNet
++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k
++ link_directory /home/zhaoyan/data/datasets/ADEChallengeData2016/images /home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k/images
++ local target=/home/zhaoyan/data/datasets/ADEChallengeData2016/images
++ local link=/home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k/images
+++ dirname /home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k/images
++ mkdir -p /home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k
++ [[ -L /home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k/images ]]
+++ readlink -f /home/zhaoyan/data/vision_benchmark/repos/BiSeNet/datasets/ade20k/images
++ current=

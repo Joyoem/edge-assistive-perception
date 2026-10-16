@@ -1,0 +1,5 @@
+name: kws-bcresnet
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10

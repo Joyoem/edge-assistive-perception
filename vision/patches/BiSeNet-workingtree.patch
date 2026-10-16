@@ -1,0 +1,18 @@
+diff --git a/datasets/ade20k/annotations b/datasets/ade20k/annotations
+index 5bb1166..19ce1af 120000
+--- a/datasets/ade20k/annotations
++++ b/datasets/ade20k/annotations
+@@ -1 +1 @@
+-/data/zzy/.datasets/ADEChallengeData2016/annotations/
+\ No newline at end of file
++/home/zhaoyan/data/datasets/ADEChallengeData2016/annotations
+\ No newline at end of file
+diff --git a/datasets/ade20k/images b/datasets/ade20k/images
+index 2a282b1..b9aab1b 120000
+--- a/datasets/ade20k/images
++++ b/datasets/ade20k/images
+@@ -1 +1 @@
+-/data/zzy/.datasets/ADEChallengeData2016/images/
+\ No newline at end of file
++/home/zhaoyan/data/datasets/ADEChallengeData2016/images
+\ No newline at end of file

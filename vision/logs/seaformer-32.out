@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 52, in build_from_cfg
+    return obj_cls(**args)
+  File "/home/zhaoyan/vision_benchmark/repos/SeaFormer/seaformer-seg/mmseg/datasets/ade.py", line 87, in __init__
+    super(ADE20KDataset, self).__init__(
+  File "/home/zhaoyan/vision_benchmark/repos/SeaFormer/seaformer-seg/mmseg/datasets/custom.py", line 122, in __init__
+    self.img_infos = self.load_annotations(self.img_dir, self.img_suffix,
+  File "/home/zhaoyan/vision_benchmark/repos/SeaFormer/seaformer-seg/mmseg/datasets/custom.py", line 158, in load_annotations
+    for img in mmcv.scandir(img_dir, img_suffix, recursive=True):
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/path.py", line 69, in _scandir
+    for entry in os.scandir(dir_path):
+FileNotFoundError: [Errno 2] No such file or directory: '/dockerdata/ADEChallengeData2016/images/validation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "tools/test.py", line 227, in <module>
+    main()
+  File "tools/test.py", line 126, in main
+    dataset = build_dataset(cfg.data.test)
+  File "/home/zhaoyan/vision_benchmark/repos/SeaFormer/seaformer-seg/mmseg/datasets/builder.py", line 77, in build_dataset
+    dataset = build_from_cfg(cfg, DATASETS, default_args)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 55, in build_from_cfg
+    raise type(e)(f'{obj_cls.__name__}: {e}')
+FileNotFoundError: ADE20KDataset: [Errno 2] No such file or directory: '/dockerdata/ADEChallengeData2016/images/validation'

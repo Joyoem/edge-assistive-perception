@@ -1,0 +1,18 @@
+OK      /home/zhaoyan/data/datasets/ADEChallengeData2016/images/validation
+OK      /home/zhaoyan/data/datasets/ADEChallengeData2016/annotations/validation
+OK      /home/zhaoyan/data/vision_benchmark/repos/SeaFormer/seaformer-seg
+OK      /home/zhaoyan/data/vision_benchmark/repos/SCTNet
+OK      /home/zhaoyan/data/vision_benchmark/repos/BiSeNet
+OK      /home/zhaoyan/data/vision_benchmark/checkpoints/seaformer_tiny_ade20k.pth
+OK      /home/zhaoyan/data/vision_benchmark/checkpoints/SCTNet-S-ADE20K.pth
+OK      /home/zhaoyan/data/vision_benchmark/checkpoints/model_final_v2_ade20k.pth
+20210
+20210
+2000
+2000
+ADE20K links are ready.
+===== seaformer_tiny =====
+Traceback (most recent call last):
+  File "tools/test.py", line 16, in <module>
+    from mmseg.apis import multi_gpu_test, single_gpu_test
+ModuleNotFoundError: No module named 'mmseg'

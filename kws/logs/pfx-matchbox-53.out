@@ -1,0 +1,128 @@
+OneLogger: Setting error_handling_strategy to DISABLE_QUIETLY_AND_REPORT_METRIC_ERROR for rank (rank=0) with OneLogger disabled. To override: explicitly set error_handling_strategy parameter.
+No exporters were provided. This means that no telemetry data will be collected.
+[NeMo W 2026-10-16 15:54:17 classification_models:641] Please use the EncDecSpeakerLabelModel instead of this model. EncDecClassificationModel model is kept for backward compatibility with older models.
+[NeMo W 2026-10-16 15:54:17 modelPT:175] If you intend to do training or fine-tuning, please call the ModelPT.setup_training_data() method and provide a valid configuration file to setup the train data loader.
+    Train config : 
+    manifest_filepath: /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/train_manifest.json
+    sample_rate: 16000
+    labels:
+    - 'yes'
+    - 'no'
+    - up
+    - down
+    - left
+    - right
+    - 'on'
+    - 'off'
+    - stop
+    - go
+    - unknown
+    - silence
+    batch_size: 128
+    shuffle: true
+    is_tarred: false
+    tarred_audio_filepaths: null
+    tarred_shard_strategy: scatter
+    augmentor:
+      shift:
+        prob: 1.0
+        min_shift_ms: -5.0
+        max_shift_ms: 5.0
+      white_noise:
+        prob: 1.0
+        min_level: -90
+        max_level: -46
+    num_workers: 12
+    
+[NeMo W 2026-10-16 15:54:17 modelPT:182] If you intend to do validation, please call the ModelPT.setup_validation_data() or ModelPT.setup_multiple_validation_data() method and provide a valid configuration file to setup the validation data loader(s). 
+    Validation config : 
+    manifest_filepath:
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/validation_manifest.json
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/test_manifest.json
+    sample_rate: 16000
+    labels:
+    - 'yes'
+    - 'no'
+    - up
+    - down
+    - left
+    - right
+    - 'on'
+    - 'off'
+    - stop
+    - go
+    - unknown
+    - silence
+    batch_size: 128
+    shuffle: false
+    val_loss_idx: 0
+    num_workers: 12
+    
+[NeMo W 2026-10-16 15:54:17 modelPT:189] Please call the ModelPT.setup_test_data() or ModelPT.setup_multiple_test_data() method and provide a valid configuration file to setup the test data loader(s).
+    Test config : 
+    manifest_filepath:
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/validation_manifest.json
+    - /media/smajumdar/data/Datasets/GSC_subset/google_speech_recognition_v2/test_manifest.json
+    sample_rate: 16000
+    labels:
+    - 'yes'
+    - 'no'
+    - up
+    - down
+    - left
+    - right
+    - 'on'
+    - 'off'
+    - stop
+    - go
+    - unknown
+    - silence
+    batch_size: 128
+    shuffle: false
+    test_loss_idx: 0
+    num_workers: 12
+    pin_memory: true
+    
+[NeMo W 2026-10-16 15:54:18 nemo_logging:364] /home/zhaoyan/data/.conda/envs/kws-nemo/lib/python3.12/site-packages/nemo/core/connectors/save_restore_connector.py:762: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+      return torch.load(model_weights, map_location=map_location)
+    
+[NeMo I 2026-10-16 15:54:18 save_restore_connector:287] Model EncDecClassificationModel was successfully restored from /home/zhaoyan/kws_benchmark/checkpoints/matchboxnet3x1x64_gscv2_subset.nemo.
+model=matchboxnet samples=4888
+ 100 ms acc= 14.59% true_p=0.1622 max_p=0.5418
+ 150 ms acc= 20.89% true_p=0.2102 max_p=0.5013
+ 200 ms acc= 28.36% true_p=0.2710 max_p=0.5034
+ 250 ms acc= 36.05% true_p=0.3406 max_p=0.5326
+ 300 ms acc= 43.94% true_p=0.4169 max_p=0.5778
+ 350 ms acc= 52.62% true_p=0.4975 max_p=0.6288
+ 400 ms acc= 60.64% true_p=0.5770 max_p=0.6844
+ 450 ms acc= 68.17% true_p=0.6506 max_p=0.7394
+ 500 ms acc= 75.74% true_p=0.7204 max_p=0.7934
+ 550 ms acc= 81.61% true_p=0.7859 max_p=0.8443
+ 600 ms acc= 86.50% true_p=0.8436 max_p=0.8892
+ 650 ms acc= 90.36% true_p=0.8849 max_p=0.9191
+ 700 ms acc= 93.47% true_p=0.9193 max_p=0.9417
+ 750 ms acc= 95.46% true_p=0.9430 max_p=0.9588
+ 800 ms acc= 96.48% true_p=0.9551 max_p=0.9682
+ 850 ms acc= 97.22% true_p=0.9634 max_p=0.9746
+ 900 ms acc= 97.38% true_p=0.9688 max_p=0.9788
+ 950 ms acc= 97.97% true_p=0.9737 max_p=0.9814
+1000 ms acc= 98.18% true_p=0.9763 max_p=0.9834
+
+===== SUMMARY =====
+{
+  "model": "matchboxnet",
+  "full_accuracy": 0.9817921440261865,
+  "T90_ms": 650,
+  "T95_ms": 700,
+  "T90_sustained_ms": 650,
+  "T95_sustained_ms": 700,
+  "stable_correct_decision": {
+    "num_samples_with_stable_correct_decision": 4799,
+    "fraction": 0.9817921440261865,
+    "median_ms": 350.0,
+    "p75_ms": 550.0,
+    "p90_ms": 650.0
+  }
+}
+
+saved: /home/zhaoyan/kws_benchmark/results/prefix_matchboxnet.json

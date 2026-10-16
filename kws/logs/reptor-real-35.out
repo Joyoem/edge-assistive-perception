@@ -1,0 +1,26 @@
+Thu Oct 15 18:22:20 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   47C    P8             19W /  170W |       1MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+data root : /data/zhaoyan/datasets/speech_commands_v0.02
+manifest  : /home/zhaoyan/kws_benchmark/repos/RepTor-Reproduction/manifests/gsc12_test.csv
+Traceback (most recent call last):
+  File "/home/zhaoyan/kws_benchmark/scripts/bench_reptor_gsc12.py", line 58, in <module>
+    assert manifest.exists(), manifest
+AssertionError: /home/zhaoyan/kws_benchmark/repos/RepTor-Reproduction/manifests/gsc12_test.csv

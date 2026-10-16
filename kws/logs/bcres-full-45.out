@@ -1,0 +1,247 @@
+Thu Oct 15 20:33:04 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060        Off |   00000000:02:00.0 Off |                  N/A |
+|  0%   47C    P8              7W /  170W |       1MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torchaudio/_backend/utils.py:213: UserWarning: In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec` under the hood. Some parameters like ``normalize``, ``format``, ``buffer_size``, and ``backend`` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead: https://docs.pytorch.org/torchcodec/stable/generated/torchcodec.decoders.AudioDecoder.html#torchcodec.decoders.AudioDecoder.
+  warnings.warn(
+labels:	 {'_silence_': 0, '_unknown_': 1, 'down': 2, 'go': 3, 'left': 4, 'no': 5, 'off': 6, 'on': 7, 'right': 8, 'stop': 9, 'up': 10, 'yes': 11}
+train/val/test = 36922/4443/4888
+frequency specaug 2 7
+time specaug 2 20
+cached 6 background-noise tensors on GPU
+model: BC-ResNet-8
+params: 321068
+epoch 001/200 lr=0.020000 train=2.0427/29.32% val=0.8867/72.88% time=280.2s
+epoch 002/200 lr=0.040000 train=0.8898/70.80% val=0.3870/87.96% time=48.9s
+epoch 003/200 lr=0.060000 train=0.6542/78.32% val=0.3239/90.84% time=52.1s
+epoch 004/200 lr=0.080000 train=0.5694/81.29% val=0.2979/90.52% time=52.1s
+epoch 005/200 lr=0.100000 train=0.5580/81.69% val=0.2780/92.28% time=52.2s
+epoch 006/200 lr=0.099994 train=0.5350/82.32% val=0.5024/82.51% time=52.1s
+epoch 007/200 lr=0.099974 train=0.5127/83.35% val=0.2362/92.23% time=52.1s
+epoch 008/200 lr=0.099942 train=0.5238/82.77% val=0.3939/87.82% time=52.1s
+epoch 009/200 lr=0.099896 train=0.5126/83.27% val=0.2661/91.83% time=52.1s
+epoch 010/200 lr=0.099838 train=0.5085/83.32% val=0.3423/88.86% time=52.2s
+epoch 011/200 lr=0.099767 train=0.5111/83.34% val=0.2344/92.73% time=52.1s
+epoch 012/200 lr=0.099682 train=0.5010/83.51% val=0.2456/91.76% time=52.1s
+epoch 013/200 lr=0.099585 train=0.4957/83.84% val=0.2898/91.22% time=52.2s
+epoch 014/200 lr=0.099475 train=0.4951/83.64% val=0.2377/92.84% time=52.1s
+epoch 015/200 lr=0.099353 train=0.4964/83.69% val=0.2894/90.95% time=52.1s
+epoch 016/200 lr=0.099217 train=0.4880/84.05% val=0.2379/92.66% time=52.1s
+epoch 017/200 lr=0.099069 train=0.4943/84.07% val=0.3714/88.77% time=52.0s
+epoch 018/200 lr=0.098907 train=0.4881/84.08% val=0.2759/91.60% time=48.5s
+epoch 019/200 lr=0.098734 train=0.4806/84.16% val=0.2567/92.08% time=52.2s
+epoch 020/200 lr=0.098547 train=0.4880/84.27% val=0.3151/90.95% time=52.2s
+epoch 021/200 lr=0.098348 train=0.4875/84.04% val=0.2495/92.28% time=52.1s
+epoch 022/200 lr=0.098136 train=0.4851/84.14% val=0.3165/89.74% time=52.4s
+epoch 023/200 lr=0.097912 train=0.4785/84.23% val=0.3557/89.69% time=52.3s
+epoch 024/200 lr=0.097676 train=0.4853/84.10% val=0.2829/91.56% time=52.4s
+epoch 025/200 lr=0.097427 train=0.4899/83.94% val=0.3094/90.91% time=52.3s
+epoch 026/200 lr=0.097166 train=0.4760/84.47% val=0.3797/88.90% time=52.3s
+epoch 027/200 lr=0.096892 train=0.4780/84.23% val=0.3361/89.94% time=52.3s
+epoch 028/200 lr=0.096606 train=0.4697/84.62% val=0.2634/91.49% time=52.3s
+epoch 029/200 lr=0.096309 train=0.4661/84.80% val=0.2025/93.79% time=52.3s
+epoch 030/200 lr=0.095999 train=0.4751/84.33% val=0.2549/91.51% time=52.2s
+epoch 031/200 lr=0.095677 train=0.4750/84.70% val=0.2963/90.82% time=52.2s
+epoch 032/200 lr=0.095344 train=0.4784/84.30% val=0.4019/87.82% time=52.1s
+epoch 033/200 lr=0.094998 train=0.4788/84.36% val=0.3370/89.24% time=52.2s
+epoch 034/200 lr=0.094641 train=0.4765/84.26% val=0.2948/90.84% time=52.2s
+epoch 035/200 lr=0.094273 train=0.4652/84.67% val=0.2866/90.61% time=52.1s
+epoch 036/200 lr=0.093893 train=0.4746/84.46% val=0.2481/91.99% time=52.2s
+epoch 037/200 lr=0.093501 train=0.4636/84.96% val=0.2260/92.71% time=52.1s
+epoch 038/200 lr=0.093098 train=0.4677/84.65% val=0.2643/92.39% time=52.1s
+epoch 039/200 lr=0.092685 train=0.4735/84.50% val=0.3038/90.77% time=52.1s
+epoch 040/200 lr=0.092260 train=0.4617/84.90% val=0.3250/89.67% time=52.1s
+epoch 041/200 lr=0.091824 train=0.4601/84.94% val=0.2463/92.30% time=52.1s
+epoch 042/200 lr=0.091377 train=0.4648/84.75% val=0.2701/91.54% time=52.1s
+epoch 043/200 lr=0.090919 train=0.4597/84.99% val=0.2828/90.84% time=52.1s
+epoch 044/200 lr=0.090451 train=0.4704/84.59% val=0.2107/93.54% time=52.1s
+epoch 045/200 lr=0.089972 train=0.4684/84.59% val=0.3385/89.83% time=52.2s
+epoch 046/200 lr=0.089483 train=0.4711/84.75% val=0.3043/90.14% time=52.1s
+epoch 047/200 lr=0.088984 train=0.4598/84.84% val=0.2854/91.29% time=52.2s
+epoch 048/200 lr=0.088474 train=0.4644/84.65% val=0.4709/86.36% time=52.1s
+epoch 049/200 lr=0.087955 train=0.4588/84.90% val=0.2172/92.98% time=52.1s
+epoch 050/200 lr=0.087426 train=0.4602/84.83% val=0.2446/92.03% time=52.2s
+epoch 051/200 lr=0.086887 train=0.4619/85.03% val=0.2103/93.50% time=52.3s
+epoch 052/200 lr=0.086338 train=0.4648/84.71% val=0.2416/92.82% time=52.1s
+epoch 053/200 lr=0.085780 train=0.4553/85.00% val=0.2049/94.19% time=52.2s
+epoch 054/200 lr=0.085213 train=0.4554/84.89% val=0.2538/92.10% time=52.1s
+epoch 055/200 lr=0.084636 train=0.4599/85.18% val=0.2084/93.74% time=52.1s
+epoch 056/200 lr=0.084051 train=0.4518/85.11% val=0.3085/90.25% time=52.1s
+epoch 057/200 lr=0.083457 train=0.4632/84.77% val=0.2556/91.42% time=52.2s
+epoch 058/200 lr=0.082854 train=0.4556/85.11% val=0.1799/94.64% time=52.1s
+epoch 059/200 lr=0.082242 train=0.4490/85.29% val=0.2941/90.41% time=52.2s
+epoch 060/200 lr=0.081622 train=0.4572/84.91% val=0.2089/93.43% time=52.2s
+epoch 061/200 lr=0.080994 train=0.4495/85.18% val=0.2724/91.24% time=52.2s
+epoch 062/200 lr=0.080358 train=0.4452/85.50% val=0.2316/92.23% time=52.1s
+epoch 063/200 lr=0.079714 train=0.4490/85.21% val=0.2516/92.19% time=52.1s
+epoch 064/200 lr=0.079062 train=0.4513/85.23% val=0.1833/94.08% time=52.1s
+epoch 065/200 lr=0.078403 train=0.4486/85.40% val=0.2135/93.14% time=52.1s
+epoch 066/200 lr=0.077737 train=0.4432/85.44% val=0.2453/92.48% time=52.2s
+epoch 067/200 lr=0.077063 train=0.4441/85.53% val=0.2092/93.72% time=52.1s
+epoch 068/200 lr=0.076382 train=0.4371/85.82% val=0.2655/91.22% time=52.2s
+epoch 069/200 lr=0.075694 train=0.4323/85.85% val=0.1923/93.97% time=52.1s
+epoch 070/200 lr=0.075000 train=0.4443/85.34% val=0.2921/90.82% time=52.1s
+epoch 071/200 lr=0.074299 train=0.4454/85.27% val=0.2022/93.52% time=52.2s
+epoch 072/200 lr=0.073592 train=0.4308/85.82% val=0.1984/93.83% time=52.2s
+epoch 073/200 lr=0.072879 train=0.4328/85.69% val=0.2079/93.43% time=52.2s
+epoch 074/200 lr=0.072160 train=0.4420/85.37% val=0.1728/94.55% time=52.2s
+epoch 075/200 lr=0.071435 train=0.4322/85.89% val=0.2414/92.19% time=52.2s
+epoch 076/200 lr=0.070704 train=0.4341/85.83% val=0.2131/93.34% time=52.2s
+epoch 077/200 lr=0.069968 train=0.4342/85.91% val=0.1837/94.24% time=52.2s
+epoch 078/200 lr=0.069227 train=0.4285/85.82% val=0.1993/93.79% time=52.2s
+epoch 079/200 lr=0.068481 train=0.4268/85.78% val=0.2190/92.82% time=52.2s
+epoch 080/200 lr=0.067730 train=0.4290/85.86% val=0.1923/94.37% time=52.3s
+epoch 081/200 lr=0.066975 train=0.4244/85.88% val=0.1861/94.31% time=52.2s
+epoch 082/200 lr=0.066215 train=0.4223/85.98% val=0.3912/88.21% time=52.2s
+epoch 083/200 lr=0.065451 train=0.4197/86.21% val=0.2076/93.86% time=52.2s
+epoch 084/200 lr=0.064683 train=0.4199/86.30% val=0.1781/94.58% time=52.2s
+epoch 085/200 lr=0.063911 train=0.4146/86.44% val=0.2313/92.87% time=52.2s
+epoch 086/200 lr=0.063135 train=0.4256/86.21% val=0.2011/93.86% time=52.2s
+epoch 087/200 lr=0.062356 train=0.4217/86.25% val=0.1779/94.53% time=52.1s
+epoch 088/200 lr=0.061574 train=0.4154/86.31% val=0.1646/94.94% time=52.2s
+epoch 089/200 lr=0.060789 train=0.4131/86.30% val=0.1848/94.08% time=52.2s
+epoch 090/200 lr=0.060001 train=0.4136/86.39% val=0.1773/94.58% time=52.2s
+epoch 091/200 lr=0.059211 train=0.4099/86.46% val=0.1977/93.95% time=52.2s
+epoch 092/200 lr=0.058418 train=0.4146/86.28% val=0.1872/94.26% time=52.2s
+epoch 093/200 lr=0.057623 train=0.4049/86.86% val=0.2119/92.78% time=52.3s
+epoch 094/200 lr=0.056826 train=0.4031/86.77% val=0.1871/94.15% time=52.2s
+epoch 095/200 lr=0.056027 train=0.4073/86.61% val=0.1792/94.46% time=52.2s
+epoch 096/200 lr=0.055226 train=0.4049/86.85% val=0.2299/93.16% time=52.3s
+epoch 097/200 lr=0.054425 train=0.4069/86.62% val=0.1639/94.85% time=52.3s
+epoch 098/200 lr=0.053622 train=0.3963/87.10% val=0.1764/94.42% time=52.2s
+epoch 099/200 lr=0.052818 train=0.3914/87.06% val=0.1672/94.91% time=52.3s
+epoch 100/200 lr=0.052013 train=0.3987/87.01% val=0.1822/94.28% time=52.2s
+epoch 101/200 lr=0.051208 train=0.3881/87.29% val=0.1850/93.97% time=52.2s
+epoch 102/200 lr=0.050403 train=0.3900/87.16% val=0.1834/94.40% time=52.3s
+epoch 103/200 lr=0.049597 train=0.3909/87.13% val=0.1886/93.99% time=52.3s
+epoch 104/200 lr=0.048792 train=0.3909/87.36% val=0.1369/95.41% time=52.3s
+epoch 105/200 lr=0.047987 train=0.3848/87.40% val=0.1672/94.67% time=52.3s
+epoch 106/200 lr=0.047182 train=0.3837/87.36% val=0.1707/94.33% time=52.3s
+epoch 107/200 lr=0.046378 train=0.3755/87.65% val=0.1898/93.97% time=52.3s
+epoch 108/200 lr=0.045575 train=0.3745/87.66% val=0.2056/94.85% time=52.3s
+epoch 109/200 lr=0.044774 train=0.3772/87.63% val=0.1585/95.23% time=52.3s
+epoch 110/200 lr=0.043973 train=0.3805/87.39% val=0.1800/94.46% time=52.3s
+epoch 111/200 lr=0.043174 train=0.3762/87.77% val=0.1339/95.77% time=52.2s
+epoch 112/200 lr=0.042377 train=0.3837/87.41% val=0.1694/94.13% time=52.3s
+epoch 113/200 lr=0.041582 train=0.3711/87.86% val=0.1458/95.84% time=52.3s
+epoch 114/200 lr=0.040789 train=0.3712/87.89% val=0.1368/95.61% time=52.3s
+epoch 115/200 lr=0.039999 train=0.3654/88.24% val=0.1738/94.55% time=52.3s
+epoch 116/200 lr=0.039211 train=0.3691/87.93% val=0.1586/94.76% time=52.3s
+epoch 117/200 lr=0.038426 train=0.3673/87.91% val=0.1545/95.07% time=52.3s
+epoch 118/200 lr=0.037644 train=0.3647/88.01% val=0.1806/94.17% time=52.3s
+epoch 119/200 lr=0.036865 train=0.3589/88.08% val=0.1209/96.26% time=52.3s
+epoch 120/200 lr=0.036089 train=0.3626/88.17% val=0.1254/96.02% time=52.3s
+epoch 121/200 lr=0.035317 train=0.3554/88.26% val=0.1728/95.32% time=52.3s
+epoch 122/200 lr=0.034549 train=0.3519/88.42% val=0.1782/94.98% time=52.3s
+epoch 123/200 lr=0.033785 train=0.3519/88.61% val=0.1259/95.88% time=52.3s
+epoch 124/200 lr=0.033025 train=0.3525/88.46% val=0.1188/96.47% time=52.3s
+epoch 125/200 lr=0.032270 train=0.3537/88.49% val=0.1378/95.50% time=52.4s
+epoch 126/200 lr=0.031519 train=0.3457/88.58% val=0.1492/95.34% time=52.4s
+epoch 127/200 lr=0.030773 train=0.3446/88.75% val=0.1437/95.57% time=52.3s
+epoch 128/200 lr=0.030032 train=0.3486/88.61% val=0.1211/96.33% time=52.3s
+epoch 129/200 lr=0.029296 train=0.3444/88.66% val=0.1235/96.06% time=52.3s
+epoch 130/200 lr=0.028565 train=0.3375/89.01% val=0.1234/96.24% time=52.3s
+epoch 131/200 lr=0.027840 train=0.3418/88.78% val=0.1230/96.24% time=52.3s
+epoch 132/200 lr=0.027121 train=0.3301/89.26% val=0.1246/96.13% time=52.3s
+epoch 133/200 lr=0.026408 train=0.3384/88.95% val=0.1016/96.87% time=52.4s
+epoch 134/200 lr=0.025701 train=0.3227/89.51% val=0.1259/96.11% time=52.4s
+epoch 135/200 lr=0.025000 train=0.3276/89.48% val=0.1341/95.54% time=52.3s
+epoch 136/200 lr=0.024306 train=0.3219/89.52% val=0.1322/95.72% time=52.4s
+epoch 137/200 lr=0.023618 train=0.3164/89.48% val=0.1234/96.24% time=52.3s
+epoch 138/200 lr=0.022937 train=0.3195/89.44% val=0.1287/96.08% time=52.3s
+epoch 139/200 lr=0.022263 train=0.3210/89.47% val=0.1049/96.47% time=52.3s
+epoch 140/200 lr=0.021597 train=0.3100/89.82% val=0.1058/96.65% time=52.4s
+epoch 141/200 lr=0.020938 train=0.3138/89.80% val=0.1285/96.29% time=52.3s
+epoch 142/200 lr=0.020286 train=0.3068/89.85% val=0.1097/96.53% time=52.3s
+epoch 143/200 lr=0.019642 train=0.3075/90.02% val=0.1106/96.60% time=52.3s
+epoch 144/200 lr=0.019006 train=0.3052/90.14% val=0.1042/96.85% time=52.3s
+epoch 145/200 lr=0.018378 train=0.3013/90.19% val=0.1146/96.58% time=52.4s
+epoch 146/200 lr=0.017758 train=0.3039/90.13% val=0.1137/96.62% time=52.3s
+epoch 147/200 lr=0.017146 train=0.3056/90.10% val=0.1209/96.08% time=52.3s
+epoch 148/200 lr=0.016543 train=0.2902/90.50% val=0.1058/96.87% time=52.3s
+epoch 149/200 lr=0.015949 train=0.2983/90.31% val=0.0910/97.37% time=52.4s
+epoch 150/200 lr=0.015364 train=0.2840/90.69% val=0.1082/96.85% time=52.3s
+epoch 151/200 lr=0.014787 train=0.2926/90.44% val=0.0946/96.76% time=52.3s
+epoch 152/200 lr=0.014220 train=0.2835/90.82% val=0.0994/96.96% time=52.3s
+epoch 153/200 lr=0.013662 train=0.2824/90.75% val=0.0993/96.85% time=52.3s
+epoch 154/200 lr=0.013113 train=0.2764/91.12% val=0.0989/96.89% time=52.3s
+epoch 155/200 lr=0.012574 train=0.2773/90.77% val=0.1117/96.15% time=52.4s
+epoch 156/200 lr=0.012045 train=0.2759/91.03% val=0.0934/97.39% time=52.3s
+epoch 157/200 lr=0.011526 train=0.2693/91.30% val=0.0994/96.85% time=52.3s
+epoch 158/200 lr=0.011016 train=0.2679/91.33% val=0.0895/97.28% time=52.3s
+epoch 159/200 lr=0.010517 train=0.2678/91.30% val=0.0923/97.10% time=52.3s
+epoch 160/200 lr=0.010028 train=0.2722/91.21% val=0.0836/97.43% time=52.3s
+epoch 161/200 lr=0.009549 train=0.2588/91.70% val=0.0853/97.12% time=52.4s
+epoch 162/200 lr=0.009081 train=0.2624/91.49% val=0.0834/97.39% time=52.3s
+epoch 163/200 lr=0.008623 train=0.2468/92.18% val=0.0919/96.98% time=52.3s
+epoch 164/200 lr=0.008176 train=0.2594/91.55% val=0.0839/97.23% time=52.4s
+epoch 165/200 lr=0.007740 train=0.2506/91.95% val=0.0815/97.12% time=52.3s
+epoch 166/200 lr=0.007315 train=0.2526/91.67% val=0.0751/97.50% time=52.4s
+epoch 167/200 lr=0.006902 train=0.2402/92.28% val=0.0864/96.98% time=52.3s
+epoch 168/200 lr=0.006499 train=0.2409/92.09% val=0.0749/97.73% time=52.3s
+epoch 169/200 lr=0.006107 train=0.2404/92.12% val=0.0772/97.37% time=52.4s
+epoch 170/200 lr=0.005727 train=0.2385/92.30% val=0.0806/97.32% time=52.4s
+epoch 171/200 lr=0.005359 train=0.2386/92.24% val=0.0743/97.55% time=52.4s
+epoch 172/200 lr=0.005002 train=0.2353/92.31% val=0.0768/97.48% time=52.3s
+epoch 173/200 lr=0.004656 train=0.2298/92.61% val=0.0809/97.57% time=52.4s
+epoch 174/200 lr=0.004323 train=0.2309/92.56% val=0.0717/97.77% time=52.3s
+epoch 175/200 lr=0.004001 train=0.2215/92.86% val=0.0716/97.68% time=52.3s
+epoch 176/200 lr=0.003691 train=0.2249/92.74% val=0.0700/97.79% time=52.4s
+epoch 177/200 lr=0.003394 train=0.2188/92.85% val=0.0718/97.41% time=52.3s
+epoch 178/200 lr=0.003108 train=0.2168/93.08% val=0.0733/97.61% time=52.3s
+epoch 179/200 lr=0.002834 train=0.2097/93.26% val=0.0622/97.88% time=52.3s
+epoch 180/200 lr=0.002573 train=0.2047/93.30% val=0.0686/97.70% time=52.4s
+epoch 181/200 lr=0.002324 train=0.2088/93.17% val=0.0657/97.82% time=52.3s
+epoch 182/200 lr=0.002088 train=0.2034/93.42% val=0.0626/97.95% time=52.3s
+epoch 183/200 lr=0.001864 train=0.2037/93.46% val=0.0689/97.88% time=52.3s
+epoch 184/200 lr=0.001652 train=0.2033/93.39% val=0.0648/97.93% time=52.3s
+epoch 185/200 lr=0.001453 train=0.1950/93.75% val=0.0644/97.70% time=52.3s
+epoch 186/200 lr=0.001266 train=0.1988/93.54% val=0.0651/97.88% time=52.3s
+epoch 187/200 lr=0.001093 train=0.1933/93.69% val=0.0630/98.04% time=52.3s
+epoch 188/200 lr=0.000931 train=0.1972/93.52% val=0.0646/97.97% time=52.3s
+epoch 189/200 lr=0.000783 train=0.1914/93.81% val=0.0615/98.00% time=52.3s
+epoch 190/200 lr=0.000647 train=0.1867/93.83% val=0.0639/97.95% time=52.3s
+epoch 191/200 lr=0.000525 train=0.1865/94.00% val=0.0625/97.93% time=52.3s
+epoch 192/200 lr=0.000415 train=0.1849/93.98% val=0.0614/97.97% time=52.3s
+epoch 193/200 lr=0.000318 train=0.1832/94.05% val=0.0617/98.06% time=52.3s
+epoch 194/200 lr=0.000233 train=0.1798/94.19% val=0.0604/98.09% time=52.3s
+epoch 195/200 lr=0.000162 train=0.1780/94.31% val=0.0605/97.91% time=52.3s
+epoch 196/200 lr=0.000104 train=0.1779/94.22% val=0.0604/97.97% time=52.3s
+epoch 197/200 lr=0.000058 train=0.1804/94.17% val=0.0605/98.00% time=52.3s
+epoch 198/200 lr=0.000026 train=0.1775/94.36% val=0.0607/98.09% time=52.4s
+epoch 199/200 lr=0.000006 train=0.1771/94.20% val=0.0597/97.97% time=52.4s
+epoch 200/200 lr=0.000000 train=0.1813/94.03% val=0.0603/98.02% time=52.4s
+
+===== FINAL TEST =====
+{
+  "model": "BC-ResNet-8",
+  "seed": 1337,
+  "epochs": 200,
+  "best_epoch": 194,
+  "best_val_acc": 0.9808687823542651,
+  "test_loss": 0.043516531584836975,
+  "test_acc": 0.9864975450081833,
+  "params": 321068,
+  "train_samples": 36922,
+  "val_samples": 4443,
+  "test_samples": 4888,
+  "total_seconds": 10738.606613315002
+}
+
+run: /data/zhaoyan/checkpoints/bcresnet/bcresnet8_seed1337_ep200

@@ -1,0 +1,22 @@
+train/val/test = 36922/4443/4888
+cached 6 background-noise tensors on GPU
+model: MLPerf-Tiny-style DS-CNN
+params: 23180
+feature shape: (1, 1, 10, 49)
+model input: (1, 1, 49, 10)
+epoch 001/001 lr=0.0005 train=1.7396/45.64% val=0.9035/72.23% time=12.2s
+
+===== FINAL TEST =====
+{
+  "model": "MLPerf-Tiny-style DS-CNN",
+  "epochs": 1,
+  "best_epoch": 1,
+  "best_val_acc": 0.7222597344136844,
+  "test_acc": 0.7178805237315876,
+  "test_loss": 0.9225398471819789,
+  "params": 23180,
+  "train_samples": 36922,
+  "val_samples": 4443,
+  "test_samples": 4888,
+  "total_seconds": 35.79920966501231
+}

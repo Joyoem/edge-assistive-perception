@@ -1,0 +1,21 @@
+===== ENV =====
+torch: 1.11.0+cu113
+cuda: True
+mmcv: 1.5.0
+2026-10-15 17:04:23,229 - mmseg - INFO - Multi-processing start method is `None`
+2026-10-15 17:04:23,229 - mmseg - INFO - OpenCV num_threads is `4
+2026-10-15 17:04:23,257 - mmseg - INFO - Loaded 2000 images
+Traceback (most recent call last):
+  File "tools/test.py", line 323, in <module>
+    main()
+  File "tools/test.py", line 221, in main
+    model = build_segmentor(cfg.model, test_cfg=cfg.get('test_cfg'))
+  File "/home/zhaoyan/vision_benchmark/repos/mmsegmentation-legacy/mmseg/models/builder.py", line 48, in build_segmentor
+    return SEGMENTORS.build(
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 215, in build
+    return self.build_func(*args, **kwargs, registry=self)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/cnn/builder.py", line 27, in build_model_from_cfg
+    return build_from_cfg(cfg, registry, default_args)
+  File "/home/zhaoyan/data/.conda/envs/vision-legacy/lib/python3.8/site-packages/mmcv/utils/registry.py", line 44, in build_from_cfg
+    raise KeyError(
+KeyError: 'EncoderDecoder_Distill is not in the models registry'

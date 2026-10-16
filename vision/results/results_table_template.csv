@@ -1,0 +1,4 @@
+model,checkpoint_source,ade20k_miou,params_m,macs_g_estimate,fp32_p50_ms,fp32_p95_ms,fp16_p50_ms,fp16_p95_ms,peak_memory_mib,decision
+SeaFormer-Tiny,official,,,,,,,,,
+SCTNet-S,official,,,,,,,,,
+BiSeNetV2,third_party,,,,,,,,,

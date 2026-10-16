@@ -1,0 +1,78 @@
+Thu Oct 15 18:38:37 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   47C    P8             19W /  170W |       1MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/home/zhaoyan/data/.conda/envs/vision-modern/lib/python3.10/site-packages/torchaudio/_backend/utils.py:213: UserWarning: In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec` under the hood. Some parameters like ``normalize``, ``format``, ``buffer_size``, and ``backend`` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead: https://docs.pytorch.org/torchcodec/stable/generated/torchcodec.decoders.AudioDecoder.html#torchcodec.decoders.AudioDecoder.
+  warnings.warn(
+data root : /data/zhaoyan/datasets/speech_commands_v0.02
+manifest  : /home/zhaoyan/kws_benchmark/repos/RepTor-Reproduction/manifests/gsc12_test.csv
+test samples: 4888
+500/4888 running_acc=96.000%
+1000/4888 running_acc=96.800%
+1500/4888 running_acc=96.933%
+2000/4888 running_acc=96.850%
+2500/4888 running_acc=96.560%
+3000/4888 running_acc=96.900%
+3500/4888 running_acc=97.086%
+4000/4888 running_acc=97.275%
+4500/4888 running_acc=96.956%
+
+===== FINAL RESULT =====
+{
+  "benchmark": "GSC12 real-test compute benchmark",
+  "model": "RepTor-9",
+  "num_test_samples": 4888,
+  "accuracy": 0.9719721767594108,
+  "params_deploy": 62076,
+  "macs": 1511000,
+  "input_audio": "16 kHz / 1 s",
+  "frontend": "40 MFCC / 30 ms window / 10 ms hop",
+  "feature_shape": [
+    1,
+    40,
+    101
+  ],
+  "timing_definition": {
+    "disk_io": "excluded",
+    "feature": "CPU MFCC",
+    "model": "GPU forward only",
+    "total_compute": "in-memory waveform -> MFCC -> H2D -> logits ready"
+  },
+  "feature_cpu_ms": {
+    "mean": 0.4255554783000339,
+    "p50": 0.42227400990668684,
+    "p95": 0.43077291193185374,
+    "p99": 0.44384647510014474
+  },
+  "model_gpu_ms": {
+    "mean": 0.6029043204704401,
+    "p50": 0.6000159978866577,
+    "p95": 0.6080639958381653,
+    "p99": 0.6256681567430497
+  },
+  "total_compute_ms": {
+    "mean": 1.0888912262646147,
+    "p50": 1.0823555057868361,
+    "p95": 1.0964098473777995,
+    "p99": 1.115556854638271
+  },
+  "peak_vram_mb": 9.400390625
+}
+
+saved: /home/zhaoyan/kws_benchmark/results/reptor9_gsc12_real.json

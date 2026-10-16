@@ -1,0 +1,10 @@
+/home/zhaoyan/data/.conda/envs/kws-bcresnet/lib/python3.10/site-packages/torchaudio/_backend/utils.py:213: UserWarning: In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec` under the hood. Some parameters like ``normalize``, ``format``, ``buffer_size``, and ``backend`` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead: https://docs.pytorch.org/torchcodec/stable/generated/torchcodec.decoders.AudioDecoder.html#torchcodec.decoders.AudioDecoder.
+  warnings.warn(
+labels:	 {'_silence_': 0, '_unknown_': 1, 'down': 2, 'go': 3, 'left': 4, 'no': 5, 'off': 6, 'on': 7, 'right': 8, 'stop': 9, 'up': 10, 'yes': 11}
+train/val/test = 36922/4443/4888
+frequency specaug 2 7
+time specaug 2 20
+model: BC-ResNet-8
+params: 321068
+epoch 001/001 lr=0.020000 train=2.0709/28.27% val=1.3138/55.71% time=779.3s
+slurmstepd-jacob-slurm: error: *** JOB 43 ON jacob-slurm CANCELLED AT 2026-10-15T20:24:58 ***
