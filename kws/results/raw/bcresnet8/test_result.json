@@ -1,0 +1,14 @@
+{
+  "model": "BC-ResNet-8",
+  "seed": 1337,
+  "epochs": 200,
+  "best_epoch": 194,
+  "best_val_acc": 0.9808687823542651,
+  "test_loss": 0.043516531584836975,
+  "test_acc": 0.9864975450081833,
+  "params": 321068,
+  "train_samples": 36922,
+  "val_samples": 4443,
+  "test_samples": 4888,
+  "total_seconds": 10738.606613315002
+}

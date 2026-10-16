@@ -1,0 +1,40 @@
+{
+  "benchmark": "GSC12 real-test compute benchmark",
+  "model": "RepTor-9",
+  "num_test_samples": 4888,
+  "accuracy": 0.9719721767594108,
+  "params_deploy": 62076,
+  "macs": 1511000,
+  "input_audio": "16 kHz / 1 s",
+  "frontend": "40 MFCC / 30 ms window / 10 ms hop",
+  "feature_shape": [
+    1,
+    40,
+    101
+  ],
+  "timing_definition": {
+    "disk_io": "excluded",
+    "feature": "CPU MFCC",
+    "model": "GPU forward only",
+    "total_compute": "in-memory waveform -> MFCC -> H2D -> logits ready"
+  },
+  "feature_cpu_ms": {
+    "mean": 0.4255554783000339,
+    "p50": 0.42227400990668684,
+    "p95": 0.43077291193185374,
+    "p99": 0.44384647510014474
+  },
+  "model_gpu_ms": {
+    "mean": 0.6029043204704401,
+    "p50": 0.6000159978866577,
+    "p95": 0.6080639958381653,
+    "p99": 0.6256681567430497
+  },
+  "total_compute_ms": {
+    "mean": 1.0888912262646147,
+    "p50": 1.0823555057868361,
+    "p95": 1.0964098473777995,
+    "p99": 1.115556854638271
+  },
+  "peak_vram_mb": 9.400390625
+}

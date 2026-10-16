@@ -1,0 +1,59 @@
+{
+  "benchmark": "GSC12 real-test compute benchmark",
+  "model": "MatchboxNet-3x1x64",
+  "checkpoint": "/home/zhaoyan/kws_benchmark/checkpoints/matchboxnet3x1x64_gscv2_subset.nemo",
+  "num_test_samples": 4888,
+  "accuracy": 0.9815875613747954,
+  "labels": [
+    "yes",
+    "no",
+    "up",
+    "down",
+    "left",
+    "right",
+    "on",
+    "off",
+    "stop",
+    "go",
+    "unknown",
+    "silence"
+  ],
+  "params": 74892,
+  "input_audio": "16 kHz / 1 s",
+  "timing_definition": {
+    "batch_size": 1,
+    "precision": "FP32",
+    "disk_io": "excluded",
+    "frontend": "official NeMo preprocessor + crop/pad",
+    "model": "encoder + decoder GPU forward",
+    "total_compute": "in-memory CPU waveform -> H2D -> frontend -> encoder -> decoder -> logits"
+  },
+  "frontend_gpu_ms": {
+    "mean": 0.5062376690903486,
+    "p50": 0.4915199875831604,
+    "p95": 0.6164479851722717,
+    "p99": 0.8053327828645707
+  },
+  "model_gpu_ms": {
+    "mean": 1.8225593179122905,
+    "p50": 1.7636480331420898,
+    "p95": 2.2650880813598633,
+    "p99": 2.9384503006935123
+  },
+  "total_compute_ms": {
+    "mean": 2.4421106317829255,
+    "p50": 2.364744999795221,
+    "p95": 3.0140115835820325,
+    "p99": 3.8994023701525293
+  },
+  "peak_vram_mb": 9.77197265625,
+  "preprocessor_config": {
+    "_target_": "nemo.collections.asr.modules.AudioToMFCCPreprocessor",
+    "window_size": 0.025,
+    "window_stride": 0.01,
+    "window": "hann",
+    "n_mels": 64,
+    "n_mfcc": 64,
+    "n_fft": 512
+  }
+}

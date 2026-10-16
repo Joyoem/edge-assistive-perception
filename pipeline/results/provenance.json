@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-10-16T20:53:22Z",
+  "hostname": "jacob-slurm",
+  "architecture": "x86_64",
+  "system_python": "/home/zhaoyan/data/.conda/envs/kws-bcresnet/bin/python",
+  "slurm_job_id": null,
+  "nvidia_smi": "0, NVIDIA GeForce RTX 3060, GPU-2b7ea99f-698f-466c-9e04-44cf7efa599a, 12288 MiB, 595.99.02\n1, NVIDIA GeForce RTX 3060, GPU-97ca29d1-6573-f792-0ba2-444b39ee4039, 12288 MiB, 595.99.02",
+  "git_main": "daf0afa03400494e6a07b25024c4d0b99d531aa8",
+  "models": {
+    "kws": {
+      "reptor9": {
+        "python": "/home/zhaoyan/data/.conda/envs/vision-modern/bin/python",
+        "adapter": "pipeline.adapters.kws",
+        "checkpoint": "/home/zhaoyan/kws_benchmark/repos/RepTor-Reproduction/checkpoints/reptor9_gscv2_seed1337/best.pt",
+        "checkpoint_sha256": "c419f7582b0d3eee485aa159e7795bbb76b2719d04b1a155192432821c619f54",
+        "repo_commit": "a65560999ed9e9ff881f5c716b102a731da1c25a",
+        "python_version": "Python 3.10.22"
+      },
+      "matchboxnet": {
+        "python": "/home/zhaoyan/data/.conda/envs/kws-nemo/bin/python",
+        "adapter": "pipeline.adapters.kws",
+        "checkpoint": "/home/zhaoyan/kws_benchmark/checkpoints/matchboxnet3x1x64_gscv2_subset.nemo",
+        "checkpoint_sha256": "6b606d6212324e15e0e7f30b2fc2a1f3f8edc501d05a5d0c8670576d338ca636",
+        "python_version": "Python 3.12.15"
+      },
+      "bcresnet8": {
+        "python": "/home/zhaoyan/data/.conda/envs/kws-bcresnet/bin/python",
+        "adapter": "pipeline.adapters.kws",
+        "checkpoint": "/data/zhaoyan/checkpoints/bcresnet/bcresnet8_seed1337_ep200/best.pt",
+        "checkpoint_sha256": "192d63593bcf5a0dc30c11db53ddcab42d902445159b902b6691fb41fba95851",
+        "repo_commit": "656f947a2a757ab5f36f649ed303ea0191cf553e",
+        "python_version": "Python 3.10.22"
+      },
+      "dscnn": {
+        "python": "/home/zhaoyan/data/.conda/envs/kws-bcresnet/bin/python",
+        "adapter": "pipeline.adapters.kws",
+        "checkpoint": "/data/zhaoyan/checkpoints/dscnn/dscnn_mlperfstyle_seed1337_ep36/best.pt",
+        "checkpoint_sha256": "80689024e3005f381a1b2cd1b430213bee4ef2c500acfda39700eccd7d050560",
+        "python_version": "Python 3.10.22"
+      }
+    },
+    "vision": {
+      "efficientvit_b1": {
+        "python": "/home/zhaoyan/data/.conda/envs/vision-modern/bin/python",
+        "adapter": "pipeline.adapters.vision_efficientvit",
+        "checkpoint": "/home/zhaoyan/vision_benchmark/checkpoints/efficientvit_seg_b1_ade20k.pt",
+        "checkpoint_sha256": "59cca6a7ff4d1a6494b7f12072c6a68fee40ef401e971f26af01a2e0f3c8f5e7",
+        "repo_commit": "de7d7733cc0329f391b33f1f459271562ec27bd5",
+        "python_version": "Python 3.10.22"
+      },
+      "segformer_b0": {
+        "python": "/home/zhaoyan/data/.conda/envs/vision-legacy/bin/python",
+        "adapter": "pipeline.adapters.vision_mmseg_legacy",
+        "checkpoint": "/home/zhaoyan/vision_benchmark/checkpoints/segformer_b0_ade20k.pth",
+        "checkpoint_sha256": "8ffa8fdac140ffaef9119150aca65e9fcb4e7a165e60b80be0102cc805d73a9c",
+        "config_sha256": "f3af1d561248f1df96b7755ef3340199a2feca04ced748411d2d7132d9d2e433",
+        "repo_commit": "ed839828760a5f6193822e0bf3492b88ae6140da",
+        "python_version": "Python 3.8.20"
+      },
+      "sctnet_s": {
+        "python": "/home/zhaoyan/data/.conda/envs/vision-legacy/bin/python",
+        "adapter": "pipeline.adapters.vision_mmseg_legacy",
+        "checkpoint": "/home/zhaoyan/vision_benchmark/checkpoints/SCTNet-S-ADE20K.pth",
+        "checkpoint_sha256": "bc5a9372569f04018f5cbe9f392665c8580900cf262e468f89f447cf0e6d03b1",
+        "config_sha256": "577f2bde648d3bbba788dcf9fddb990326960b658f69f574000379b2bfb725bd",
+        "repo_commit": "d4bd6d8073a59831d69f303fc5b39c70023e2719",
+        "python_version": "Python 3.8.20"
+      },
+      "seaformer_tiny": {
+        "python": "/home/zhaoyan/data/.conda/envs/vision-legacy/bin/python",
+        "adapter": "pipeline.adapters.vision_mmseg_legacy",
+        "checkpoint": "/home/zhaoyan/vision_benchmark/checkpoints/seaformer_tiny_ade20k.pth",
+        "checkpoint_sha256": "26cf756a7aab488a62678913da66615b558eab0d9ed9928a134fc3ce4932ce92",
+        "config_sha256": "141a820cb616677deb7a26cbeb0526e5f6a678b05268c6b4c89ec92751eb5ade",
+        "repo_commit": "9718d05b6e70d0561dda7c052b8457feed74d4d9",
+        "python_version": "Python 3.8.20"
+      }
+    }
+  }
+}

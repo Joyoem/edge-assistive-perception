@@ -1,0 +1,19 @@
+{
+  "model": "RepTor-9",
+  "accuracy_gsc12": 0.9719721767594108,
+  "params_deploy": 62076,
+  "macs_reported": 1511000,
+  "frontend": "40 MFCC, 30ms window, 10ms hop",
+  "input_shape": [
+    1,
+    40,
+    101
+  ],
+  "feature_cpu_p50_ms": 0.405360508011654,
+  "feature_cpu_p95_ms": 0.412332484847866,
+  "model_gpu_p50_ms": 0.5772959887981415,
+  "model_gpu_p95_ms": 0.5826560258865356,
+  "audio_to_logits_p50_ms": 1.0201615077676252,
+  "audio_to_logits_p95_ms": 1.0297205910319462,
+  "peak_vram_mb": 9.38427734375
+}

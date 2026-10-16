@@ -1,0 +1,13 @@
+{
+  "model": "MLPerf-Tiny-style DS-CNN",
+  "epochs": 36,
+  "best_epoch": 26,
+  "best_val_acc": 0.9354040063020481,
+  "test_acc": 0.9382160392798691,
+  "test_loss": 0.2639999701740577,
+  "params": 23180,
+  "train_samples": 36922,
+  "val_samples": 4443,
+  "test_samples": 4888,
+  "total_seconds": 430.86254007098614
+}

@@ -1,0 +1,171 @@
+{
+  "pipeline_id": "P10",
+  "kws": "bcresnet8",
+  "vision": "segformer_b0",
+  "run_type": "RTX3060 warm co-resident sequential gated file input",
+  "input_pairs": 4,
+  "known_inputs": 2,
+  "negative_inputs": 2,
+  "trigger_count": 2,
+  "trigger_rate": 0.5,
+  "known_intent_correct_rate": 1.0,
+  "known_intent_trigger_rate": 1.0,
+  "negative_false_command_rate": 0.0,
+  "all_requests_wall_ms": {
+    "n": 4,
+    "mean": 17.3165,
+    "p50": 16.5215,
+    "p95": 30.9454,
+    "p99": 31.3497,
+    "max": 31.4508
+  },
+  "routed_request_latency_ms": {
+    "n": 2,
+    "mean": 29.766,
+    "p50": 29.766,
+    "p95": 31.2824,
+    "p99": 31.4171,
+    "max": 31.4508
+  },
+  "no_action_latency_ms": {
+    "n": 2,
+    "mean": 4.867,
+    "p50": 4.867,
+    "p95": 4.9525,
+    "p99": 4.9601,
+    "max": 4.962
+  },
+  "kws_stage_ms": {
+    "n": 4,
+    "mean": 4.4235,
+    "p50": 4.4365,
+    "p95": 4.5917,
+    "p99": 4.604,
+    "max": 4.6071
+  },
+  "vision_stage_ms": {
+    "n": 2,
+    "mean": 24.6405,
+    "p50": 24.6405,
+    "p95": 26.027,
+    "p99": 26.1503,
+    "max": 26.1811
+  },
+  "orchestration_and_ipc_ms": {
+    "n": 4,
+    "mean": 0.5728,
+    "p50": 0.5844,
+    "p95": 0.7671,
+    "p99": 0.7674,
+    "max": 0.7675
+  },
+  "mask_output_rate_per_s": 28.856354558208746,
+  "all_request_rate_per_s": 57.71270911641749,
+  "elapsed_benchmark_s": 0.0693,
+  "kws_load_s": 2.707,
+  "vision_load_s": 6.502,
+  "gpu_process_memory_at_load": {
+    "processes": [
+      {
+        "pid": 357195,
+        "gpu_mib": 106.0
+      },
+      {
+        "pid": 357225,
+        "gpu_mib": 1808.0
+      }
+    ],
+    "sum_gpu_mib": 1914.0
+  },
+  "gpu_process_memory_after_warmup": {
+    "processes": [
+      {
+        "pid": 357195,
+        "gpu_mib": 166.0
+      },
+      {
+        "pid": 357225,
+        "gpu_mib": 2576.0
+      }
+    ],
+    "sum_gpu_mib": 2742.0
+  },
+  "gpu_process_memory_after_run": {
+    "processes": [
+      {
+        "pid": 357195,
+        "gpu_mib": 166.0
+      },
+      {
+        "pid": 357225,
+        "gpu_mib": 2576.0
+      }
+    ],
+    "sum_gpu_mib": 2742.0
+  },
+  "kws_process_rss": {
+    "VmHWM": 1079.29,
+    "VmRSS": 1079.29
+  },
+  "vision_process_rss": {
+    "VmHWM": 5298.05,
+    "VmRSS": 5298.05
+  },
+  "kws_peak_torch_allocated_mib": 12.04736328125,
+  "vision_peak_torch_allocated_mib": 418.552734375,
+  "warmup_pairs": 2,
+  "batch_size": 1,
+  "precision": "FP32 (as configured)",
+  "slurm_job_id": "68",
+  "cuda_visible_devices": "0",
+  "kws_python": "/home/zhaoyan/data/.conda/envs/kws-bcresnet/bin/python",
+  "vision_python": "/home/zhaoyan/data/.conda/envs/vision-legacy/bin/python",
+  "kws_runtime": {
+    "ready": true,
+    "pid": 357195,
+    "device": "NVIDIA GeForce RTX 3060",
+    "torch_version": "2.8.0+cu128",
+    "torch_cuda_version": "12.8",
+    "cudnn_version": 91002,
+    "cuda_device_capability": [
+      8,
+      6
+    ],
+    "python": "/home/zhaoyan/data/.conda/envs/kws-bcresnet/bin/python"
+  },
+  "vision_runtime": {
+    "ready": true,
+    "pid": 357225,
+    "device": "NVIDIA GeForce RTX 3060",
+    "torch_version": "1.11.0+cu113",
+    "torch_cuda_version": "11.3",
+    "cudnn_version": 8200,
+    "cuda_device_capability": [
+      8,
+      6
+    ],
+    "python": "/home/zhaoyan/data/.conda/envs/vision-legacy/bin/python"
+  },
+  "input_manifest_sha256": "48f23b761ac378b4d8ee2657becf619bafe643cd9d05222c720fd916f1e7c792",
+  "methodology": {
+    "dispatch": "GSC12 proxy mapping, not real object-word comprehension",
+    "measurement": "wall time from file request through routed target-class pixel count",
+    "includes": [
+      "WAV+image disk read",
+      "decode/preprocess",
+      "interprocess JSON",
+      "device transfer",
+      "forward",
+      "mask selection"
+    ],
+    "excludes": [
+      "microphone acquisition",
+      "speech buffering",
+      "camera capture",
+      "display",
+      "model cold start"
+    ],
+    "routed_latency": "conditional on KWS predicting a known command; no-action separately reported",
+    "fps_warning": "Throughput is gated file-request throughput, not continuous camera video FPS."
+  }
+}

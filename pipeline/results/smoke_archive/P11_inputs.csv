@@ -1,0 +1,5 @@
+sample_id,audio_path,silence,image_path,ground_truth_label,is_positive
+down/ca4d5368_nohash_3.wav,/data/zhaoyan/datasets/speech_commands_v0.02/down/ca4d5368_nohash_3.wav,False,/home/zhaoyan/data/datasets/ADEChallengeData2016/images/validation/ADE_val_00000001.jpg,down,True
+wow/7add4c5f_nohash_0.wav,/data/zhaoyan/datasets/speech_commands_v0.02/wow/7add4c5f_nohash_0.wav,False,/home/zhaoyan/data/datasets/ADEChallengeData2016/images/validation/ADE_val_00000002.jpg,_unknown_,False
+go/a9f54d8d_nohash_0.wav,/data/zhaoyan/datasets/speech_commands_v0.02/go/a9f54d8d_nohash_0.wav,False,/home/zhaoyan/data/datasets/ADEChallengeData2016/images/validation/ADE_val_00000003.jpg,go,True
+silence_test_00339,,True,/home/zhaoyan/data/datasets/ADEChallengeData2016/images/validation/ADE_val_00000004.jpg,_silence_,False

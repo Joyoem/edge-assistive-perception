@@ -1,0 +1,26 @@
+{
+  "protocol": "P0 4x4 warm resident sequential gated file input",
+  "pairs_per_pipeline": 500,
+  "positive_per_pipeline": 400,
+  "negative_per_pipeline": 100,
+  "warmup_pairs": 25,
+  "label_shuffle_seed": "1337-{label}",
+  "image_shuffle_seed": 20261016,
+  "seeded_image_selection": "sorted then shuffle",
+  "selected_input_manifest_sha256": "65edb0d9e5a984cb3b1689faa2ed6f6833767d49abc48d4e43d7e83b3f833a6e",
+  "label_counts": {
+    "down": 40,
+    "_unknown_": 50,
+    "go": 40,
+    "_silence_": 50,
+    "left": 40,
+    "no": 40,
+    "off": 40,
+    "on": 40,
+    "right": 40,
+    "stop": 40,
+    "up": 40,
+    "yes": 40
+  },
+  "benchmark_scope": "file-input WAV -> KWS -> proxy routing -> vision target mask statistic; not live camera FPS or Jetson latency"
+}
